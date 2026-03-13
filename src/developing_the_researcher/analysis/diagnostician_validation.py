@@ -224,6 +224,36 @@ def plot_radar_by_cluster(results: list[dict], out_dir: Path) -> Path:
     return path
 
 
+def _save_checkpoint(
+    results: list[dict],
+    n_theses: int,
+    models: list[str],
+    out_json_path: Path,
+) -> None:
+    """Save partial or full results to JSON. Called after each thesis for crash resilience."""
+    payload = {
+        "run_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+        "n_theses": n_theses,
+        "models": models,
+        "results": results,
+    }
+    out_json_path.parent.mkdir(parents=True, exist_ok=True)
+    out_json_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+
+
+def _load_existing_results(out_json_path: Path) -> tuple[list[dict], set[tuple[str, str]]]:
+    """Load existing results if present. Returns (results_list, set of (thesis_id, model) already done)."""
+    if not out_json_path.exists():
+        return [], set()
+    try:
+        data = json.loads(out_json_path.read_text(encoding="utf-8"))
+        results = data.get("results", [])
+        done = {(r["thesis_id"], r["model"]) for r in results}
+        return results, done
+    except (json.JSONDecodeError, KeyError):
+        return [], set()
+
+
 def run_validation(
     corpus_path: Path | None = None,
     n_theses: int = 10,
@@ -231,8 +261,13 @@ def run_validation(
     out_json_path: Path | None = None,
     out_figures_dir: Path | None = None,
     random_state: int = 42,
+    resume: bool = True,
 ) -> list[dict]:
-    """Sample theses by cluster, run diagnostician with each model, save JSON and radar charts. Returns results list."""
+    """Sample theses by cluster, run diagnostician with each model, save JSON and radar charts.
+
+    Saves after each thesis and after each model (figures) for crash resilience. If resume=True
+    and out_json_path exists, skips (thesis, model) pairs already completed.
+    """
     loader = CorpusLoader(path=corpus_path)
     theses = loader.load()
     if not theses:
@@ -245,7 +280,8 @@ def run_validation(
     out_json_path = out_json_path or DIAGNOSTICIAN_VALIDATION_PATH
     out_figures_dir = out_figures_dir or DOCS_VALIDATION_OUTPUTS
 
-    results: list[dict] = []
+    results, done = _load_existing_results(out_json_path) if resume else ([], set())
+
     for model_name in models:
         committee = CommitteeLoader(model_name=model_name)
 
@@ -253,28 +289,25 @@ def run_validation(
             return committee.generate(p, system_prompt=s, max_new_tokens=m)
 
         for t in sample:
+            thesis_id = str(t.get("id", ""))
+            if (thesis_id, model_name) in done:
+                continue
             text = f"{t.get('title', '')}. {t.get('abstract', '')}"[:800]
             profile = diagnose_competencies(text, generate_fn)
-            results.append({
-                "thesis_id": str(t.get("id", "")),
+            row = {
+                "thesis_id": thesis_id,
                 "title": (t.get("title") or "")[:80],
                 "cluster": t["cluster"],
                 "model": model_name,
                 "profile": profile,
-            })
+            }
+            results.append(row)
+            done.add((thesis_id, model_name))
+            _save_checkpoint(results, n_theses, models, out_json_path)
 
-    payload = {
-        "run_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
-        "n_theses": n_theses,
-        "models": models,
-        "results": results,
-    }
-    out_json_path.parent.mkdir(parents=True, exist_ok=True)
-    out_json_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
-
-    out_figures_dir.mkdir(parents=True, exist_ok=True)
-    plot_radar_per_thesis(results, out_figures_dir)
-    plot_radar_by_model(results, out_figures_dir)
-    plot_radar_by_cluster(results, out_figures_dir)
+        out_figures_dir.mkdir(parents=True, exist_ok=True)
+        plot_radar_per_thesis(results, out_figures_dir)
+        plot_radar_by_model(results, out_figures_dir)
+        plot_radar_by_cluster(results, out_figures_dir)
 
     return results
