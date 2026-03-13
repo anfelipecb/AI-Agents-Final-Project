@@ -1,0 +1,58 @@
+Metadata-Version: 2.4
+Name: safe-to-be-challenged
+Version: 0.1.0
+Summary: Memo W9 integration: skill-diagnostic committee + harmlessness monitor + MACSS corpus + GitHub validation
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: httpx>=0.25.0
+Requires-Dist: beautifulsoup4>=4.12.0
+Requires-Dist: sentence-transformers>=2.2.0
+Requires-Dist: transformers>=4.36.0
+Requires-Dist: accelerate>=0.25.0
+Requires-Dist: bitsandbytes>=0.41.0
+Requires-Dist: numpy>=1.24.0
+Requires-Dist: scikit-learn>=1.3.0
+Requires-Dist: matplotlib>=3.7.0
+Requires-Dist: seaborn>=0.13.0
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Provides-Extra: presentations
+Requires-Dist: mcp-pptx-tools>=1.0.0; extra == "presentations"
+
+# Safe to Be Challenged — Memo W9 Integration
+
+A self-contained final project integrating memo_w9 (skill-diagnostic committee + harmlessness monitor), MACSS thesis corpus, and GitHub issues for longitudinal validation.
+
+## Setup
+
+```bash
+cd final-project
+pip install -e .
+# For PowerPoint presentation creation (MCP):
+pip install -e ".[presentations]"
+```
+
+## Quick Start
+
+```python
+from safe_to_be_challenged.pipeline import run_pilot
+
+results = run_pilot(n_per_condition=2)
+```
+
+## Data
+
+- **MACSS corpus:** `data/macs_theses.json` (fetch via OAI-PMH or scraper)
+- **GitHub issues:** `data/github_issues.json` (fetch via GitHub API)
+- **Pilot results:** `data/pilot_results.json`
+
+## Structure
+
+- `src/safe_to_be_challenged/` — main package
+- `data/` — generated at runtime
+- `figures/` — pilot plots
+- `.cursor/skills/` — project skills (ml-llm-expert, pipeline-orchestration, web-scraping, powerpoint-presentations)
+- `presentations/` — output folder for final presentation slides (.pptx)
+
+See [report.md](report.md) for implementation details and rationale.
