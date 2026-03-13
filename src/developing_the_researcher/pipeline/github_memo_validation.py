@@ -104,8 +104,7 @@ def run_retrospective_validation(force_refresh: bool = False) -> dict:
             "results": [],
             "message": "No authors with memos in both early and late weeks.",
         }
-        from ..config import DATA_DIR
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
+        GITHUB_MEMO_VALIDATION_PATH.parent.mkdir(parents=True, exist_ok=True)
         GITHUB_MEMO_VALIDATION_PATH.write_text(json.dumps(out, indent=2), encoding="utf-8")
         return out
 
@@ -318,6 +317,56 @@ def plot_memo_activity_by_week(panel: list[dict], out_path: Path | None = None) 
     return out_path
 
 
+def plot_course_improvement_by_week(
+    panel: list[dict],
+    generate_fn,
+    out_path: Path | None = None,
+    max_per_week: int = 8,
+) -> Path:
+    """Heatmap: week x dimension, mean competency score. Uses inferno palette."""
+    out_path = out_path or DOCS_VALIDATION_OUTPUTS / "github_course_improvement_heatmap.png"
+    out_path = Path(out_path)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+
+    def _gen(p: str, s: str | None, m: int) -> str:
+        return generate_fn(p, system_prompt=s, max_new_tokens=m)
+
+    by_week: dict[int, list[dict]] = {}
+    for p in panel:
+        w = p.get("week", 0)
+        by_week.setdefault(w, []).append(p)
+
+    dims = list(COMPETENCY_DIMENSIONS.keys())
+    weeks = sorted(by_week.keys())
+    data = np.zeros((len(weeks), len(dims)))
+    for i, week in enumerate(weeks):
+        items = by_week[week][:max_per_week]
+        scores_by_dim: dict[str, list[float]] = {d: [] for d in dims}
+        for item in items:
+            text = item.get("memo_text", "")[:800]
+            profile = diagnose_competencies(text, _gen)
+            for d in dims:
+                s = profile.get(d, {}).get("score", 3)
+                scores_by_dim[d].append(float(s))
+        for j, d in enumerate(dims):
+            vals = scores_by_dim[d]
+            data[i, j] = np.mean(vals) if vals else 0
+
+    fig, ax = plt.subplots(figsize=(max(6, len(dims) * 1.2), max(4, len(weeks) * 0.6)))
+    im = ax.imshow(data, aspect="auto", cmap="inferno", vmin=1, vmax=5)
+    ax.set_xticks(range(len(dims)))
+    ax.set_xticklabels([RADAR_DIM_LABELS.get(d, d.replace("_", " ")[:12]) for d in dims], fontsize=8)
+    ax.set_yticks(range(len(weeks)))
+    ax.set_yticklabels([f"Week {w}" for w in weeks], fontsize=9)
+    plt.colorbar(im, ax=ax, label="Mean score (1-5)")
+    ax.set_title("Course competency evolution: mean score by week x dimension")
+    ax.set_facecolor(FIGURE_BG)
+    plt.tight_layout()
+    plt.savefig(out_path, dpi=150, bbox_inches="tight", facecolor=FIGURE_BG)
+    plt.close()
+    return out_path
+
+
 def run_github_memo_validation_full(force_refresh: bool = False) -> tuple[dict, list[Path]]:
     """Run retrospective validation and generate all figures. Returns (results, paths)."""
     results = run_retrospective_validation(force_refresh=force_refresh)
@@ -344,12 +393,18 @@ def run_github_memo_validation_full(force_refresh: bool = False) -> tuple[dict, 
         gen = OpenAIGenerate()
         p = plot_competency_evolution_by_week(panel, gen.generate, max_per_week=3)
         paths.append(p)
+        p = plot_course_improvement_by_week(panel, gen.generate, max_per_week=8)
+        paths.append(p)
 
     return results, paths
 
 
-def plot_retrospective_improvement_heatmap(results: dict, out_path: Path | None = None) -> Path:
-    """Heatmap: authors x dimensions, cells = improvement score."""
+def plot_retrospective_improvement_heatmap(
+    results: dict,
+    out_path: Path | None = None,
+    max_authors: int = 20,
+) -> Path:
+    """Heatmap: top authors x dimensions, cells = improvement score. Uses inferno palette."""
     out_path = out_path or DOCS_VALIDATION_OUTPUTS / "github_improvement_heatmap.png"
     out_path = Path(out_path)
     out_path.parent.mkdir(parents=True, exist_ok=True)
@@ -362,20 +417,31 @@ def plot_retrospective_improvement_heatmap(results: dict, out_path: Path | None 
     for r in res_list:
         all_dims.update(r.get("improvement_scores", {}).keys())
     dims = sorted(all_dims) or list(COMPETENCY_DIMENSIONS.keys())
-    authors = [r["author"] for r in res_list]
+
+    # Rank authors by mean improvement; keep top max_authors
+    author_scores = []
+    for r in res_list:
+        scores = [r.get("improvement_scores", {}).get(d, 0) for d in dims]
+        mean_score = np.mean(scores) if scores else 0
+        author_scores.append((r["author"], mean_score, r))
+    author_scores.sort(key=lambda x: x[1], reverse=True)
+    top = author_scores[:max_authors]
+    authors = [a[0] for a in top]
+    res_list = [a[2] for a in top]
+
     data = np.zeros((len(authors), len(dims)))
     for i, r in enumerate(res_list):
         for j, d in enumerate(dims):
             data[i, j] = r.get("improvement_scores", {}).get(d, 0)
 
     fig, ax = plt.subplots(figsize=(max(6, len(dims) * 1.2), max(4, len(authors) * 0.4)))
-    im = ax.imshow(data, aspect="auto", cmap="YlOrRd", vmin=0, vmax=5)
+    im = ax.imshow(data, aspect="auto", cmap="inferno", vmin=0, vmax=5)
     ax.set_xticks(range(len(dims)))
     ax.set_xticklabels([RADAR_DIM_LABELS.get(d, d.replace("_", " ")[:12]) for d in dims], fontsize=8)
     ax.set_yticks(range(len(authors)))
     ax.set_yticklabels(authors, fontsize=9)
     plt.colorbar(im, ax=ax, label="Improvement (1-5)")
-    ax.set_title("Retrospective improvement: author x dimension")
+    ax.set_title("Retrospective improvement: top authors x dimension")
     plt.tight_layout()
     plt.savefig(out_path, dpi=150, bbox_inches="tight", facecolor=FIGURE_BG)
     plt.close()

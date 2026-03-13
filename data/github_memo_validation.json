@@ -1,0 +1,1505 @@
+{
+  "corpus_size": 240,
+  "panel_validation": {
+    "n_authors": 46,
+    "n_memos": 240,
+    "weeks_present": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "authors_with_both": 17
+  },
+  "authors_with_both": 17,
+  "early_week": 2,
+  "late_week": 9,
+  "results": [
+    {
+      "author": "yangyuwang",
+      "early_week": 2,
+      "late_week": 9,
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The thesis presents a clear research question and outlines a logical framework for exploring the relationship between surprise and influence in artworks. The claims are well-supported by the proposed methodology and literature references."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "While the thesis mentions testing the relationship between surprise and influence, it does not clearly delineate between correlation and causation or evaluate the quality of sources, which may affect the robustness of the findings."
+        },
+        "methodological_reasoning": {
+          "score": 4,
+          "justification": "The design choice to operationalize surprise through perplexity and geometric measures is well-justified, indicating an understanding of relevant methodologies. However, potential validity threats and scope conditions could be more thoroughly identified."
+        },
+        "theoretical_integration": {
+          "score": 3,
+          "justification": "The thesis connects findings to existing literature but primarily focuses on pattern description rather than integrating them into broader theoretical frameworks, which limits its depth."
+        },
+        "self_reflexivity": {
+          "score": 2,
+          "justification": "The thesis lacks a clear discussion of the author's assumptions, positionality, and limitations, which are important for understanding the context and potential biases in the research."
+        },
+        "receptivity_to_critique": {
+          "score": 3,
+          "justification": "The thesis engages with existing literature and acknowledges potential challenges, but it does not demonstrate a strong commitment to addressing critiques or incorporating feedback into the research design."
+        }
+      },
+      "plan": {
+        "gap_map": [
+          {
+            "dimension": "evidence_evaluation",
+            "current": "Score 3; lacks clarity in distinguishing correlation and causation.",
+            "target": "Score 4; clearly delineate between correlation and causation and evaluate source quality.",
+            "priority": "high"
+          },
+          {
+            "dimension": "theoretical_integration",
+            "current": "Score 3; focuses on pattern description rather than broader theoretical frameworks.",
+            "target": "Score 4; integrate findings into existing theoretical frameworks.",
+            "priority": "medium"
+          },
+          {
+            "dimension": "self_reflexivity",
+            "current": "Score 2; lacks discussion of author's assumptions and limitations.",
+            "target": "Score 4; include a comprehensive discussion of assumptions and positionality.",
+            "priority": "high"
+          },
+          {
+            "dimension": "receptivity_to_critique",
+            "current": "Score 3; acknowledges critiques but lacks commitment to addressing them.",
+            "target": "Score 4; actively incorporate feedback into the research design.",
+            "priority": "medium"
+          }
+        ],
+        "exercises": [
+          {
+            "title": "Literature Review on Surprise in Art",
+            "description": "Conduct a detailed literature review focusing on psychological theories of surprise and their application in visual art. Synthesize findings to create precise criteria for defining 'surprise' in your research context.",
+            "dimension": "theoretical_integration"
+          },
+          {
+            "title": "Source Evaluation Framework",
+            "description": "Develop a framework for evaluating the quality and relevance of sources used in your thesis. This should include criteria for assessing the validity of correlations and causations in your findings.",
+            "dimension": "evidence_evaluation"
+          },
+          {
+            "title": "Self-Reflection Journal",
+            "description": "Maintain a self-reflection journal where you regularly document your assumptions, positionality, and any limitations you perceive in your research. Use this to better articulate these aspects in your thesis.",
+            "dimension": "self_reflexivity"
+          },
+          {
+            "title": "Feedback Incorporation Plan",
+            "description": "Create a structured plan for how to systematically address feedback from your committee. Include specific actions for integrating critiques into your research methodology.",
+            "dimension": "receptivity_to_critique"
+          }
+        ],
+        "trajectory": "To strengthen your thesis, focus on enhancing evidence evaluation by creating a robust framework for source assessment. Simultaneously, deepen your theoretical integration by grounding your research in established psychological theories of surprise. Regular self-reflection will help clarify your positionality and assumptions, while a structured plan for incorporating feedback will demonstrate your receptivity to critique and improve the overall quality of your research."
+      },
+      "improvement_scores": {
+        "evidence_evaluation": 4.0,
+        "theoretical_integration": 4.0,
+        "self_reflexivity": 3.0,
+        "receptivity_to_critique": 4.0
+      }
+    },
+    {
+      "author": "bentleyben",
+      "early_week": 2,
+      "late_week": 9,
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The thesis presents a clear research question and logically connects the concept of 'bridge users' with the potential impact on polarization. The claim is supported by the rationale of using transformer-based text analysis, indicating a strong alignment between claims and proposed evidence."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "While the thesis hints at distinguishing between bridge users' effects on discourse and polarization, it does not explicitly address potential sources of bias or conflicting evidence. A deeper exploration of correlation versus causation would strengthen this aspect."
+        },
+        "methodological_reasoning": {
+          "score": 4,
+          "justification": "The proposed use of language models and text analysis reflects thoughtful design choices. However, the thesis could provide more detail on how validity threats will be managed and the specific scope conditions under which the findings will be applicable."
+        },
+        "theoretical_integration": {
+          "score": 3,
+          "justification": "The thesis connects its findings to existing research on polarization and echo chambers but primarily describes patterns rather than integrating them into a broader theoretical framework. More explicit connections to relevant theories could enhance this dimension."
+        },
+        "self_reflexivity": {
+          "score": 3,
+          "justification": "There is limited discussion of the author's assumptions, positionality, and limitations. Acknowledging these elements would contribute to a more robust self-reflexive stance and enhance the credibility of the research."
+        },
+        "receptivity_to_critique": {
+          "score": 4,
+          "justification": "The thesis appears open to addressing potential critiques by acknowledging the complexity of polarization and the role of language models. Engaging with challenges directly would further establish a strong receptivity to critique."
+        }
+      },
+      "plan": {
+        "gap_map": [
+          {
+            "dimension": "evidence_evaluation",
+            "current": "3 - Limited exploration of bias and conflicting evidence.",
+            "target": "4 - Explicitly address potential biases and distinguish correlation from causation.",
+            "priority": "high"
+          },
+          {
+            "dimension": "theoretical_integration",
+            "current": "3 - Basic connections to existing research.",
+            "target": "4 - Integrate findings into a broader theoretical framework.",
+            "priority": "medium"
+          },
+          {
+            "dimension": "self_reflexivity",
+            "current": "3 - Limited discussion of assumptions and positionality.",
+            "target": "4 - Acknowledge assumptions and limitations more thoroughly.",
+            "priority": "medium"
+          }
+        ],
+        "exercises": [
+          {
+            "title": "Bias Analysis Workshop",
+            "description": "Conduct a workshop focusing on identifying and mitigating biases in research interpretation. Use practical examples related to polarization.",
+            "dimension": "evidence_evaluation"
+          },
+          {
+            "title": "Literature Review on Theoretical Frameworks",
+            "description": "Engage in a comprehensive literature review to identify and summarize key theories such as social identity theory and communication theory, and prepare to integrate them into the thesis.",
+            "dimension": "theoretical_integration"
+          },
+          {
+            "title": "Reflexivity Journal",
+            "description": "Maintain a journal where you regularly reflect on your assumptions, positionality, and the limitations of your research approach, aiming for a deeper self-reflexive practice.",
+            "dimension": "self_reflexivity"
+          }
+        ],
+        "trajectory": "Focus on enhancing the robustness of evidence evaluation and theoretical integration by engaging in targeted exercises that address identified gaps. Incorporating systematic reflections on self-reflexivity will further strengthen the credibility of the research. Aim to refine these aspects progressively over the next semester to prepare for the final thesis submission."
+      },
+      "improvement_scores": {
+        "evidence_evaluation": 4.0,
+        "theoretical_integration": 5.0,
+        "self_reflexivity": 4.0
+      }
+    },
+    {
+      "author": "yuanzeliu",
+      "early_week": 2,
+      "late_week": 9,
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The thesis presents a clear research question and logically connects the concepts of identity-aligned LLMs and fact-based reasoning. However, further development on how claims align with evidence could enhance coherence."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "The thesis acknowledges the complex relationship between belief rigidity and motivated reasoning, but it lacks detailed discussion on distinguishing correlation from causation and evaluating the quality of sources."
+        },
+        "methodological_reasoning": {
+          "score": 3,
+          "justification": "There are hints at a methodological framework involving observational learning, yet the justification for design choices and identification of potential validity threats require more elaboration."
+        },
+        "theoretical_integration": {
+          "score": 4,
+          "justification": "The research connects its findings to broader theoretical frameworks around motivated reasoning and observational learning, but it could benefit from more explicit integration of existing theories."
+        },
+        "self_reflexivity": {
+          "score": 2,
+          "justification": "The thesis does not adequately address the author's assumptions or positionality, nor does it discuss the limitations of the proposed approach, which is crucial for self-reflexivity."
+        },
+        "receptivity_to_critique": {
+          "score": 3,
+          "justification": "While the thesis introduces a novel perspective, it does not sufficiently engage with potential critiques or counterarguments, which could strengthen the overall argument."
+        }
+      },
+      "plan": {
+        "gap_map": [
+          {
+            "dimension": "self_reflexivity",
+            "current": "The thesis does not adequately address the author's assumptions or positionality.",
+            "target": "Incorporate a section discussing the author's assumptions, positionality, and limitations of the approach.",
+            "priority": "high"
+          },
+          {
+            "dimension": "evidence_evaluation",
+            "current": "The thesis lacks detailed discussions on distinguishing correlation from causation and evaluating source quality.",
+            "target": "Include a thorough evaluation framework for sources and differentiate between correlation and causation.",
+            "priority": "medium"
+          },
+          {
+            "dimension": "methodological_reasoning",
+            "current": "Hints at a methodological framework but lacks justification for design choices.",
+            "target": "Provide a clear justification for design choices and identify potential validity threats.",
+            "priority": "medium"
+          },
+          {
+            "dimension": "receptivity_to_critique",
+            "current": "Insufficient engagement with critiques or counterarguments.",
+            "target": "Develop a section addressing potential critiques and counterarguments to strengthen the argument.",
+            "priority": "medium"
+          }
+        ],
+        "exercises": [
+          {
+            "title": "Self-Reflection Journal",
+            "description": "Maintain a journal to reflect on personal biases, assumptions, and positionality related to the research topic.",
+            "dimension": "self_reflexivity"
+          },
+          {
+            "title": "Source Evaluation Framework",
+            "description": "Create a framework for evaluating sources, focusing on quality, bias, and relevance, while distinguishing between correlation and causation.",
+            "dimension": "evidence_evaluation"
+          },
+          {
+            "title": "Methodology Workshop",
+            "description": "Attend workshops or seminars that focus on research design and methodology, specifically addressing validity threats.",
+            "dimension": "methodological_reasoning"
+          },
+          {
+            "title": "Counterargument Development",
+            "description": "Draft potential counterarguments to your thesis and engage with them in writing to better prepare for critique.",
+            "dimension": "receptivity_to_critique"
+          }
+        ],
+        "trajectory": "Begin by addressing self-reflexivity through journaling and integrating reflections into the thesis. Next, enhance evidence evaluation and methodological reasoning by developing frameworks and justifications for your choices. Finally, improve receptivity to critique by actively engaging with counterarguments, strengthening your overall thesis."
+      },
+      "improvement_scores": {
+        "self_reflexivity": 4.0,
+        "evidence_evaluation": 3.0,
+        "methodological_reasoning": 4.0,
+        "receptivity_to_critique": 3.0
+      }
+    },
+    {
+      "author": "GitBagguetti",
+      "early_week": 2,
+      "late_week": 9,
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The thesis presents a clear research question and articulates a logical flow by connecting existing literature on cultural dimensions and language. However, further elaboration on the specific claims and evidence supporting the argument would strengthen coherence."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "The thesis references existing studies to support its claims but lacks a detailed analysis of the quality of these sources and does not fully address potential conflicting evidence in the literature."
+        },
+        "methodological_reasoning": {
+          "score": 3,
+          "justification": "While the thesis implies an examination of different linguistic contexts, it does not adequately justify the chosen methodological approach or identify potential threats to validity and scope conditions."
+        },
+        "theoretical_integration": {
+          "score": 4,
+          "justification": "The thesis attempts to connect its findings to existing theoretical frameworks regarding cultural cognition and language, indicating a good level of theoretical integration, though it could benefit from deeper connections to broader theoretical implications."
+        },
+        "self_reflexivity": {
+          "score": 2,
+          "justification": "The thesis does not adequately reflect on the author's assumptions, positionality, or the limitations of the study, which are crucial for understanding the research context and potential biases."
+        },
+        "receptivity_to_critique": {
+          "score": 3,
+          "justification": "The thesis acknowledges existing research but does not actively engage with potential critiques or counterarguments, which would enhance its robustness and demonstrate an openness to scholarly discourse."
+        }
+      },
+      "plan": {
+        "gap_map": [
+          {
+            "dimension": "self_reflexivity",
+            "current": "2",
+            "target": "4",
+            "priority": "high"
+          },
+          {
+            "dimension": "evidence_evaluation",
+            "current": "3",
+            "target": "4",
+            "priority": "medium"
+          },
+          {
+            "dimension": "methodological_reasoning",
+            "current": "3",
+            "target": "4",
+            "priority": "medium"
+          },
+          {
+            "dimension": "receptivity_to_critique",
+            "current": "3",
+            "target": "4",
+            "priority": "medium"
+          }
+        ],
+        "exercises": [
+          {
+            "title": "Reflective Journaling",
+            "description": "Engage in regular journaling to critically reflect on your positionality, assumptions, and the limitations of your research. This will enhance your self-reflexivity.",
+            "dimension": "self_reflexivity"
+          },
+          {
+            "title": "Source Quality Analysis",
+            "description": "Conduct a detailed analysis of the sources cited in your thesis, assessing their credibility, relevance, and potential biases. Address conflicting evidence to strengthen your evidence evaluation.",
+            "dimension": "evidence_evaluation"
+          },
+          {
+            "title": "Methodology Justification Workshop",
+            "description": "Participate in a workshop focused on articulating and justifying your methodological choices. Discuss potential threats to validity and refine your methodological reasoning.",
+            "dimension": "methodological_reasoning"
+          },
+          {
+            "title": "Engagement with Counterarguments",
+            "description": "Draft sections that explicitly address potential critiques of your thesis. This exercise will foster receptivity to critique and enhance the robustness of your arguments.",
+            "dimension": "receptivity_to_critique"
+          }
+        ],
+        "trajectory": "To enhance your thesis, prioritize developing self-reflexivity by reflecting on your assumptions and biases. Simultaneously, improve evidence evaluation and methodological reasoning through targeted exercises that promote critical engagement with your sources and research design. Finally, actively seek to incorporate counterarguments to strengthen your overall argumentation and scholarly discourse."
+      },
+      "improvement_scores": {
+        "self_reflexivity": 3.0,
+        "evidence_evaluation": 4.0,
+        "methodological_reasoning": 4.0,
+        "receptivity_to_critique": 4.0
+      }
+    },
+    {
+      "author": "michellecdu",
+      "early_week": 2,
+      "late_week": 9,
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The thesis presents a clear research question and logically connects the idea of fine-tuning on partisan corpora to potential shifts in latent semantic space. However, further elaboration on the specific mechanisms of this relationship would strengthen the coherence."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "The thesis references existing research that highlights biases in generative AI models but does not sufficiently address how it will distinguish between correlation and causation or evaluate the quality of its sources."
+        },
+        "methodological_reasoning": {
+          "score": 3,
+          "justification": "While the multi-step approach is mentioned, it lacks detailed justification for the chosen methods, potential validity threats, and the specific scope conditions for the study."
+        },
+        "theoretical_integration": {
+          "score": 4,
+          "justification": "The thesis connects its investigation to existing frameworks regarding cultural biases in AI. However, it could enhance its depth by more explicitly linking findings to broader theoretical implications beyond pattern description."
+        },
+        "self_reflexivity": {
+          "score": 3,
+          "justification": "The thesis does not explicitly address the author's assumptions or positionality, which is important for understanding the research context and potential biases in interpretation."
+        },
+        "receptivity_to_critique": {
+          "score": 2,
+          "justification": "There is limited engagement with potential challenges or critiques of the approach. A stronger thesis would anticipate objections and address them substantively."
+        }
+      },
+      "plan": {
+        "gap_map": [
+          {
+            "dimension": "evidence_evaluation",
+            "current": "References existing research but lacks distinction between correlation and causation.",
+            "target": "Clearly evaluates sources and establishes causation versus correlation.",
+            "priority": "high"
+          },
+          {
+            "dimension": "methodological_reasoning",
+            "current": "Multi-step approach mentioned but lacks detailed justification.",
+            "target": "Provides clear justification for methods and identifies potential validity threats.",
+            "priority": "high"
+          },
+          {
+            "dimension": "self_reflexivity",
+            "current": "Does not address author's assumptions or positionality.",
+            "target": "Explicitly discusses positionality and biases in interpretation.",
+            "priority": "medium"
+          },
+          {
+            "dimension": "receptivity_to_critique",
+            "current": "Limited engagement with potential challenges to the approach.",
+            "target": "Anticipates and addresses potential objections substantively.",
+            "priority": "medium"
+          }
+        ],
+        "exercises": [
+          {
+            "title": "Strengthening Evidence Evaluation",
+            "description": "Conduct a literature review focusing on distinguishing between correlation and causation in related studies. Create a matrix to evaluate the quality and applicability of your sources.",
+            "dimension": "evidence_evaluation"
+          },
+          {
+            "title": "Methodological Justification Workshop",
+            "description": "Engage in a workshop with peers to discuss and critique your methodological choices. Prepare a document detailing justifications and potential validity threats for each method employed.",
+            "dimension": "methodological_reasoning"
+          },
+          {
+            "title": "Reflexivity Statement Development",
+            "description": "Write a reflexivity statement that outlines your assumptions, positionality, and how these may influence your research. Include a plan for addressing these biases in your analysis.",
+            "dimension": "self_reflexivity"
+          },
+          {
+            "title": "Critique Response Simulation",
+            "description": "Simulate a thesis defense where peers pose challenging questions about your approach. Prepare responses that substantively address these critiques.",
+            "dimension": "receptivity_to_critique"
+          }
+        ],
+        "trajectory": "To enhance your thesis, focus on deepening your methodological and evidence evaluation skills. Prioritize understanding and articulating the nuances of your research methods while also addressing potential biases and critiques. This structured approach will solidify your argument and clarify your research framework."
+      },
+      "improvement_scores": {
+        "evidence_evaluation": 3.0,
+        "methodological_reasoning": 4.0,
+        "self_reflexivity": 2.0,
+        "receptivity_to_critique": 3.0
+      }
+    },
+    {
+      "author": "michellesuminpark",
+      "early_week": 2,
+      "late_week": 9,
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The thesis presents a clear research question and logically connects the use of transformer-based language models to the concept of scientific surprise. The alignment between claims and evidence is mostly coherent, although further detail on how the model's predictions are operationalized would strengthen the argument."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "The thesis indicates an intention to use transformer models to measure predictability, but it lacks a detailed discussion on distinguishing correlation from causation or evaluating the quality of sources used in the research. Addressing potential conflicting evidence is also missing."
+        },
+        "methodological_reasoning": {
+          "score": 4,
+          "justification": "The choice of transformer architectures is well justified in the context of the research question. However, the thesis could benefit from a more thorough identification of potential validity threats and scope conditions that may affect the results."
+        },
+        "theoretical_integration": {
+          "score": 2,
+          "justification": "The thesis primarily describes the methodology and the concept of scientific surprise without substantial integration into existing theoretical frameworks. It requires a stronger connection between findings and established theories to enhance its contribution to the field."
+        },
+        "self_reflexivity": {
+          "score": 2,
+          "justification": "There is minimal reflection on the author's assumptions, positionality, or limitations of the study. Acknowledging these aspects is crucial for a comprehensive understanding of the research context."
+        },
+        "receptivity_to_critique": {
+          "score": 3,
+          "justification": "The thesis does not explicitly engage with potential critiques or challenges to its methodology or assumptions. Although it seems aware of the complexities involved, a more proactive approach to addressing critiques would strengthen its overall robustness."
+        }
+      },
+      "plan": {
+        "gap_map": [
+          {
+            "dimension": "theoretical_integration",
+            "current": "Minimal integration with existing theories; primarily descriptive.",
+            "target": "Strong connection to established theories in cognitive science and sociology of science.",
+            "priority": "high"
+          },
+          {
+            "dimension": "self_reflexivity",
+            "current": "Limited reflection on assumptions and positionality.",
+            "target": "Comprehensive acknowledgment of author's perspective and study limitations.",
+            "priority": "high"
+          },
+          {
+            "dimension": "evidence_evaluation",
+            "current": "Lacks discussion on correlation vs. causation and evaluation of sources.",
+            "target": "Detailed evaluation of evidence quality and addressing conflicting evidence.",
+            "priority": "medium"
+          },
+          {
+            "dimension": "receptivity_to_critique",
+            "current": "Some awareness of critiques but lacks proactive engagement.",
+            "target": "Explicit engagement with potential critiques and challenges.",
+            "priority": "medium"
+          }
+        ],
+        "exercises": [
+          {
+            "title": "Literature Review on Scientific Surprise",
+            "description": "Conduct a focused literature review on foundational texts regarding scientific surprise, particularly examining works by Popper and Kuhn. Identify key theoretical frameworks that can be applied to your research.",
+            "dimension": "theoretical_integration"
+          },
+          {
+            "title": "Reflexivity Journal",
+            "description": "Maintain a reflexivity journal throughout the research process to document thoughts on your positionality, assumptions, and perceived limitations of the study. This will help in articulating your self-reflexivity in the thesis.",
+            "dimension": "self_reflexivity"
+          },
+          {
+            "title": "Evidence Evaluation Framework",
+            "description": "Develop a framework for evaluating the quality of sources and differentiating between correlation and causation in your findings. Include criteria for assessing conflicting evidence.",
+            "dimension": "evidence_evaluation"
+          },
+          {
+            "title": "Critique Engagement Plan",
+            "description": "Create a plan to proactively engage with potential critiques of your methodology and assumptions. This should include anticipating challenges and formulating responses based on existing literature.",
+            "dimension": "receptivity_to_critique"
+          }
+        ],
+        "trajectory": "To enhance the thesis, prioritize developing a robust theoretical framework by engaging with foundational literature on scientific surprise. Simultaneously, focus on self-reflexivity by documenting personal assumptions and limitations. Incorporate a detailed evidence evaluation framework and actively address potential critiques to strengthen the overall rigor and credibility of the research."
+      },
+      "improvement_scores": {
+        "theoretical_integration": 4.0,
+        "self_reflexivity": 3.0,
+        "evidence_evaluation": 2.0,
+        "receptivity_to_critique": 3.0
+      }
+    },
+    {
+      "author": "Abenezer2",
+      "early_week": 2,
+      "late_week": 9,
+      "profile": {
+        "argument_construction": {
+          "score": 3,
+          "justification": "Could not parse diagnostician output."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "Could not parse diagnostician output."
+        },
+        "methodological_reasoning": {
+          "score": 3,
+          "justification": "Could not parse diagnostician output."
+        },
+        "theoretical_integration": {
+          "score": 3,
+          "justification": "Could not parse diagnostician output."
+        },
+        "self_reflexivity": {
+          "score": 3,
+          "justification": "Could not parse diagnostician output."
+        },
+        "receptivity_to_critique": {
+          "score": 3,
+          "justification": "Could not parse diagnostician output."
+        }
+      },
+      "plan": {
+        "gap_map": [
+          {
+            "dimension": "argument_construction",
+            "current": "Score 3 - insufficient clarity in research question.",
+            "target": "Score 4 - articulate a more precise and comparative research question.",
+            "priority": "high"
+          },
+          {
+            "dimension": "theoretical_integration",
+            "current": "Score 3 - lacks integration of relevant theoretical frameworks.",
+            "target": "Score 4 - strengthen theoretical grounding with computational linguistics frameworks.",
+            "priority": "high"
+          },
+          {
+            "dimension": "methodological_reasoning",
+            "current": "Score 3 - unclear outline of the proposed methodology.",
+            "target": "Score 4 - provide a detailed outline of the three-stage pipeline.",
+            "priority": "medium"
+          },
+          {
+            "dimension": "self_reflexivity",
+            "current": "Score 3 - limited engagement with potential validity threats.",
+            "target": "Score 4 - discuss validity threats and scope conditions.",
+            "priority": "medium"
+          },
+          {
+            "dimension": "evidence_evaluation",
+            "current": "Score 3 - insufficient metrics for evaluation.",
+            "target": "Score 4 - specify metrics for evaluating system effectiveness.",
+            "priority": "medium"
+          }
+        ],
+        "exercises": [
+          {
+            "title": "Research Question Refinement",
+            "description": "Work with a peer or advisor to refine your research question, focusing on clarity and the comparative aspect with standard classifiers.",
+            "dimension": "argument_construction"
+          },
+          {
+            "title": "Framework Integration Workshop",
+            "description": "Attend a workshop or seminar on computational linguistics frameworks and how they can be integrated into your thesis.",
+            "dimension": "theoretical_integration"
+          },
+          {
+            "title": "Methodology Drafting Session",
+            "description": "Create a detailed outline for your three-stage pipeline, specifying the function and innovation of each stage.",
+            "dimension": "methodological_reasoning"
+          },
+          {
+            "title": "Validity Threat Analysis",
+            "description": "Conduct a self-reflective analysis on the validity threats to your research and outline scope conditions for your system's effectiveness.",
+            "dimension": "self_reflexivity"
+          }
+        ],
+        "trajectory": "Begin by refining your research question to enhance clarity and focus on its comparative nature. Simultaneously, engage with relevant theoretical frameworks to strengthen your theoretical integration. Following this, develop a detailed methodology outline and critically assess the validity threats to your work. This structured approach will support a comprehensive enhancement of your competencies."
+      },
+      "improvement_scores": {
+        "argument_construction": 5.0,
+        "theoretical_integration": 4.0,
+        "methodological_reasoning": 4.0,
+        "self_reflexivity": 3.0,
+        "evidence_evaluation": 3.0
+      }
+    },
+    {
+      "author": "yilinx-10",
+      "early_week": 2,
+      "late_week": 9,
+      "profile": {
+        "argument_construction": {
+          "score": 3,
+          "justification": "Could not parse diagnostician output."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "Could not parse diagnostician output."
+        },
+        "methodological_reasoning": {
+          "score": 3,
+          "justification": "Could not parse diagnostician output."
+        },
+        "theoretical_integration": {
+          "score": 3,
+          "justification": "Could not parse diagnostician output."
+        },
+        "self_reflexivity": {
+          "score": 3,
+          "justification": "Could not parse diagnostician output."
+        },
+        "receptivity_to_critique": {
+          "score": 3,
+          "justification": "Could not parse diagnostician output."
+        }
+      },
+      "plan": {
+        "gap_map": [
+          {
+            "dimension": "argument_construction",
+            "current": "3",
+            "target": "4",
+            "priority": "high"
+          },
+          {
+            "dimension": "evidence_evaluation",
+            "current": "3",
+            "target": "4",
+            "priority": "high"
+          },
+          {
+            "dimension": "methodological_reasoning",
+            "current": "3",
+            "target": "4",
+            "priority": "medium"
+          },
+          {
+            "dimension": "theoretical_integration",
+            "current": "3",
+            "target": "4",
+            "priority": "medium"
+          },
+          {
+            "dimension": "self_reflexivity",
+            "current": "3",
+            "target": "4",
+            "priority": "medium"
+          },
+          {
+            "dimension": "receptivity_to_critique",
+            "current": "3",
+            "target": "4",
+            "priority": "medium"
+          }
+        ],
+        "exercises": [
+          {
+            "title": "Refine Research Questions",
+            "description": "Work with a mentor to articulate a more precise research question focused on LLMs and cultural norms in emoji usage.",
+            "dimension": "argument_construction"
+          },
+          {
+            "title": "Explore Alternative Embedding Models",
+            "description": "Conduct a comparative analysis of Word2Vec, GloVe, and BERT models regarding their application in emoji usage studies.",
+            "dimension": "methodological_reasoning"
+          },
+          {
+            "title": "Define Cultural Conventions",
+            "description": "Write a detailed section defining 'cultural conventions' in emoji usage, incorporating relevant literature and examples.",
+            "dimension": "theoretical_integration"
+          },
+          {
+            "title": "Bias Evaluation Exercise",
+            "description": "Create a checklist for evaluating potential biases in your data selection and methodology, and apply it to your current thesis framework.",
+            "dimension": "self_reflexivity"
+          }
+        ],
+        "trajectory": "To advance your competencies, focus on refining your argumentation skills by clarifying research questions and definitions. Simultaneously, enhance your methodological reasoning by exploring various embedding models and evaluating biases in your data. Lastly, integrate theoretical frameworks more explicitly into your research to strengthen the conceptual foundation of your work."
+      },
+      "improvement_scores": {
+        "argument_construction": 4.0,
+        "evidence_evaluation": 4.0,
+        "methodological_reasoning": 4.0,
+        "theoretical_integration": 4.0,
+        "self_reflexivity": 4.0
+      }
+    },
+    {
+      "author": "zixuanzzx01",
+      "early_week": 2,
+      "late_week": 9,
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The thesis presents a clear and logically coherent argument regarding the relationship between managerial obfuscation and financial distress. The concept of 'narrative friction' is well articulated, although further elaboration on how this ties into existing literature could strengthen the claim-evidence alignment."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "While the thesis hints at distinguishing between correlation and causation by focusing on textual perplexity as a leading indicator, it does not yet provide detailed plans for assessing source quality or addressing conflicting evidence. More specific methodologies for evaluating the evidence would enhance this dimension."
+        },
+        "methodological_reasoning": {
+          "score": 4,
+          "justification": "The proposed research design is innovative and shows a thoughtful approach to quantifying 'surprise.' However, it would benefit from a more explicit discussion of potential validity threats and how the scope of the study might limit generalizability."
+        },
+        "theoretical_integration": {
+          "score": 3,
+          "justification": "The thesis connects its findings to the emerging concept of 'narrative friction,' but it needs to more explicitly situate this concept within existing theoretical frameworks. Further integration of relevant theories could enhance the depth of the analysis."
+        },
+        "self_reflexivity": {
+          "score": 2,
+          "justification": "There is limited evidence of self-reflexivity in the current excerpt. The author does not address their own assumptions or positionality, nor do they discuss how these factors may influence the research outcomes. This is an area needing significant improvement."
+        },
+        "receptivity_to_critique": {
+          "score": 3,
+          "justification": "The thesis shows some engagement with potential critiques by acknowledging the limitations of traditional sentiment analysis. However, there is little indication of how the author plans to address challenges that may arise during the research process."
+        }
+      },
+      "plan": {
+        "gap_map": [
+          {
+            "dimension": "self_reflexivity",
+            "current": "Limited evidence of self-reflexivity; assumptions and positionality are not addressed.",
+            "target": "Explicitly discuss assumptions and positionality and their influence on research outcomes.",
+            "priority": "high"
+          },
+          {
+            "dimension": "theoretical_integration",
+            "current": "Needs more explicit connections to existing theoretical frameworks regarding 'narrative friction.'",
+            "target": "Integrate relevant theories to enhance the depth of the analysis.",
+            "priority": "medium"
+          },
+          {
+            "dimension": "evidence_evaluation",
+            "current": "Lacks detailed plans for assessing source quality and addressing conflicting evidence.",
+            "target": "Develop specific methodologies for evaluating evidence quality and resolving conflicts.",
+            "priority": "medium"
+          },
+          {
+            "dimension": "receptivity_to_critique",
+            "current": "Some engagement with potential critiques, but lacks a clear plan to address challenges.",
+            "target": "Articulate strategies for addressing anticipated challenges during the research process.",
+            "priority": "medium"
+          }
+        ],
+        "exercises": [
+          {
+            "title": "Reflexivity Workshop",
+            "description": "Participate in a workshop focused on self-reflexivity in research, where you will reflect on personal biases and positionality.",
+            "dimension": "self_reflexivity"
+          },
+          {
+            "title": "Literature Mapping Exercise",
+            "description": "Create a visual map connecting your concept of 'narrative friction' to existing theories and literature on managerial obfuscation and cognitive dissonance.",
+            "dimension": "theoretical_integration"
+          },
+          {
+            "title": "Evidence Evaluation Framework",
+            "description": "Draft a framework outlining how you will assess source quality and address conflicting evidence, including specific criteria and methodologies.",
+            "dimension": "evidence_evaluation"
+          },
+          {
+            "title": "Critique Response Plan",
+            "description": "Develop a plan detailing how you will respond to potential critiques and challenges identified in your research, including contingency strategies.",
+            "dimension": "receptivity_to_critique"
+          }
+        ],
+        "trajectory": "Focus on enhancing self-reflexivity by reflecting on your positionality and biases. Simultaneously, work on integrating existing theories into your analysis while developing a robust framework for evidence evaluation. Address critiques proactively by creating a response plan, which will deepen your engagement with the research process."
+      },
+      "improvement_scores": {
+        "self_reflexivity": 4.0,
+        "theoretical_integration": 3.0,
+        "evidence_evaluation": 2.0,
+        "receptivity_to_critique": 3.0
+      }
+    },
+    {
+      "author": "alenazeng",
+      "early_week": 2,
+      "late_week": 9,
+      "profile": {
+        "argument_construction": {
+          "score": 3,
+          "justification": "Could not parse diagnostician output."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "Could not parse diagnostician output."
+        },
+        "methodological_reasoning": {
+          "score": 3,
+          "justification": "Could not parse diagnostician output."
+        },
+        "theoretical_integration": {
+          "score": 3,
+          "justification": "Could not parse diagnostician output."
+        },
+        "self_reflexivity": {
+          "score": 3,
+          "justification": "Could not parse diagnostician output."
+        },
+        "receptivity_to_critique": {
+          "score": 3,
+          "justification": "Could not parse diagnostician output."
+        }
+      },
+      "plan": {
+        "gap_map": [
+          {
+            "dimension": "argument_construction",
+            "current": "3",
+            "target": "4",
+            "priority": "high"
+          },
+          {
+            "dimension": "evidence_evaluation",
+            "current": "3",
+            "target": "4",
+            "priority": "high"
+          },
+          {
+            "dimension": "methodological_reasoning",
+            "current": "3",
+            "target": "4",
+            "priority": "high"
+          },
+          {
+            "dimension": "theoretical_integration",
+            "current": "3",
+            "target": "4",
+            "priority": "high"
+          },
+          {
+            "dimension": "self_reflexivity",
+            "current": "3",
+            "target": "4",
+            "priority": "medium"
+          },
+          {
+            "dimension": "receptivity_to_critique",
+            "current": "3",
+            "target": "4",
+            "priority": "medium"
+          }
+        ],
+        "exercises": [
+          {
+            "title": "Refine Research Question",
+            "description": "Break down your research question into two clear parts, specifying what is meant by 'cultural perspectives' and how AI amplifies them.",
+            "dimension": "argument_construction"
+          },
+          {
+            "title": "Critically Analyze Data Source",
+            "description": "Write a one-page analysis of Reddit as a data source, discussing its relevance and limitations in representing diverse cultural viewpoints.",
+            "dimension": "evidence_evaluation"
+          },
+          {
+            "title": "Develop Methodological Framework",
+            "description": "Create a detailed methodological framework for your research, including how you will validate findings and address biases.",
+            "dimension": "methodological_reasoning"
+          },
+          {
+            "title": "Engage with Theoretical Frameworks",
+            "description": "Identify and situate your research within at least two established theoretical frameworks relevant to cultural studies and AI.",
+            "dimension": "theoretical_integration"
+          }
+        ],
+        "trajectory": "Focus on refining your research question and strengthening your methodology to enhance clarity and rigor. Engage with theoretical frameworks to provide a solid basis for your inquiry. Regularly seek feedback from peers and advisors to improve receptivity to critique and self-reflexivity."
+      },
+      "improvement_scores": {
+        "argument_construction": 4.0,
+        "evidence_evaluation": 4.0,
+        "methodological_reasoning": 4.0,
+        "theoretical_integration": 4.0,
+        "self_reflexivity": 3.0
+      }
+    },
+    {
+      "author": "leahdimsu",
+      "early_week": 2,
+      "late_week": 9,
+      "profile": {
+        "argument_construction": {
+          "score": 3,
+          "justification": "Could not parse diagnostician output."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "Could not parse diagnostician output."
+        },
+        "methodological_reasoning": {
+          "score": 3,
+          "justification": "Could not parse diagnostician output."
+        },
+        "theoretical_integration": {
+          "score": 3,
+          "justification": "Could not parse diagnostician output."
+        },
+        "self_reflexivity": {
+          "score": 3,
+          "justification": "Could not parse diagnostician output."
+        },
+        "receptivity_to_critique": {
+          "score": 3,
+          "justification": "Could not parse diagnostician output."
+        }
+      },
+      "plan": {
+        "gap_map": [
+          {
+            "dimension": "argument_construction",
+            "current": "3",
+            "target": "4",
+            "priority": "high"
+          },
+          {
+            "dimension": "evidence_evaluation",
+            "current": "3",
+            "target": "4",
+            "priority": "high"
+          },
+          {
+            "dimension": "methodological_reasoning",
+            "current": "3",
+            "target": "4",
+            "priority": "high"
+          },
+          {
+            "dimension": "theoretical_integration",
+            "current": "3",
+            "target": "4",
+            "priority": "high"
+          },
+          {
+            "dimension": "self_reflexivity",
+            "current": "3",
+            "target": "4",
+            "priority": "medium"
+          },
+          {
+            "dimension": "receptivity_to_critique",
+            "current": "3",
+            "target": "4",
+            "priority": "medium"
+          }
+        ],
+        "exercises": [
+          {
+            "title": "Define Key Terms",
+            "description": "Create a glossary for your thesis that clearly defines 'evaluation archetypes', 'polarized ratings', and other key concepts. This will enhance clarity and understanding.",
+            "dimension": "argument_construction"
+          },
+          {
+            "title": "Research Design Outline",
+            "description": "Draft a detailed research design outline that includes the methodology and specific analytical techniques, such as sentiment analysis and topic modeling, that you will employ in your study.",
+            "dimension": "methodological_reasoning"
+          },
+          {
+            "title": "Bias Identification Exercise",
+            "description": "Identify and analyze potential biases in user-generated content, particularly self-selection bias, and discuss how these biases will be addressed in your research.",
+            "dimension": "evidence_evaluation"
+          },
+          {
+            "title": "Theoretical Framework Integration",
+            "description": "Explore and integrate relevant theories from media studies and psychology that relate to emotional responses in consumer evaluations, such as nostalgia, into your thesis framework.",
+            "dimension": "theoretical_integration"
+          }
+        ],
+        "trajectory": "To enhance your competencies, focus on refining your argument construction and methodological reasoning by actively engaging in exercises that clarify key terms and outline your research design. Additionally, integrate relevant theoretical frameworks to bolster your analysis, while being receptive to feedback that addresses biases. This structured approach will elevate your work and prepare you for successful thesis completion."
+      },
+      "improvement_scores": {
+        "argument_construction": 4.0,
+        "evidence_evaluation": 4.0,
+        "methodological_reasoning": 5.0,
+        "theoretical_integration": 4.0,
+        "self_reflexivity": 3.0
+      }
+    },
+    {
+      "author": "Donghua1015",
+      "early_week": 2,
+      "late_week": 9,
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The thesis presents a clear research question and outlines a logical framework for exploring underexplored research domains. The proposed methods suggest a coherent approach to enhance existing systems, demonstrating good claim-evidence alignment."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "While the thesis indicates an intention to utilize geometric analysis and surprise metrics, it lacks specific discussion on how it will differentiate between correlation and causation or evaluate the quality of sources used in the analysis."
+        },
+        "methodological_reasoning": {
+          "score": 4,
+          "justification": "The thesis describes a novel methodological approach and hints at considerations for validity threats, such as the need to enhance existing retrieval systems. However, it could benefit from a more detailed justification of design choices and scope conditions."
+        },
+        "theoretical_integration": {
+          "score": 3,
+          "justification": "The research aims to connect findings to existing frameworks in KnowledgeLab. However, it primarily focuses on a methodology without clearly articulating how the outcomes will be theoretically situated beyond mere pattern description."
+        },
+        "self_reflexivity": {
+          "score": 2,
+          "justification": "The thesis does not address the author's assumptions, positionality, or potential limitations of the proposed methods, which is crucial for understanding the research context."
+        },
+        "receptivity_to_critique": {
+          "score": 3,
+          "justification": "There is a recognition of the challenges in identifying transformative research directions, but the thesis does not explicitly engage with potential critiques or alternative perspectives on the chosen methods."
+        }
+      },
+      "plan": {
+        "gap_map": [
+          {
+            "dimension": "evidence_evaluation",
+            "current": "Score 3 - Lacks specific methods for differentiating correlation and causation.",
+            "target": "Score 4 - Clearly outline methodologies for evidence evaluation, including source quality assessment.",
+            "priority": "high"
+          },
+          {
+            "dimension": "theoretical_integration",
+            "current": "Score 3 - Limited articulation of connection to existing frameworks.",
+            "target": "Score 4 - Provide explicit connections to established theoretical frameworks like network theory.",
+            "priority": "medium"
+          },
+          {
+            "dimension": "self_reflexivity",
+            "current": "Score 2 - Does not address author's assumptions and limitations.",
+            "target": "Score 4 - Incorporate a thorough reflection on positionality and methodological limitations.",
+            "priority": "high"
+          },
+          {
+            "dimension": "receptivity_to_critique",
+            "current": "Score 3 - Recognizes challenges but lacks explicit engagement with critiques.",
+            "target": "Score 4 - Actively engage with potential critiques and alternative methods.",
+            "priority": "medium"
+          }
+        ],
+        "exercises": [
+          {
+            "title": "Develop a Methodology Section",
+            "description": "Draft a detailed methodology section that includes specific techniques for distinguishing correlation from causation and assessing source quality.",
+            "dimension": "evidence_evaluation"
+          },
+          {
+            "title": "Literature Review on Theoretical Frameworks",
+            "description": "Conduct a literature review focusing on network theory and complexity science to establish connections between your findings and these frameworks.",
+            "dimension": "theoretical_integration"
+          },
+          {
+            "title": "Self-Reflexivity Workshop",
+            "description": "Participate in a workshop that encourages reflection on positionality and the limitations of research methods, applying these reflections to your thesis.",
+            "dimension": "self_reflexivity"
+          },
+          {
+            "title": "Engage with Peer Feedback",
+            "description": "Organize a feedback session with peers to discuss potential critiques and alternative perspectives on your methodology and overall approach.",
+            "dimension": "receptivity_to_critique"
+          }
+        ],
+        "trajectory": "To enhance the thesis, prioritize addressing the gaps in evidence evaluation and self-reflexivity, as these are critical for establishing a robust research foundation. Engage in exercises that strengthen connections to theoretical frameworks and develop a habit of seeking and integrating critique. This trajectory will lead to a more comprehensive and credible thesis."
+      },
+      "improvement_scores": {
+        "evidence_evaluation": 3.0,
+        "theoretical_integration": 4.0,
+        "self_reflexivity": 2.0,
+        "receptivity_to_critique": 3.0
+      }
+    },
+    {
+      "author": "UCHIleolu",
+      "early_week": 2,
+      "late_week": 9,
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The thesis presents a clear research question and proposes a proactive approach to knowledge discovery, demonstrating logical coherence and a strong claim-evidence alignment. However, further details on how the evidence will support the claims could enhance the argument."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "The thesis briefly references existing literature but does not deeply engage with the quality of sources or address potential conflicting evidence. A more thorough evaluation of the evidence would strengthen the argument."
+        },
+        "methodological_reasoning": {
+          "score": 4,
+          "justification": "The research design is well-justified, explaining the need for a proactive system. However, it lacks a detailed discussion of potential validity threats and scope conditions that might affect the implementation of the proposed system."
+        },
+        "theoretical_integration": {
+          "score": 2,
+          "justification": "The thesis mentions the existing CHORUS system and its limitations but does not connect the proposed findings to broader theoretical frameworks or literature, focusing instead on description rather than integration."
+        },
+        "self_reflexivity": {
+          "score": 3,
+          "justification": "There is a moderate level of awareness of the assumptions underlying the current system, but the thesis could benefit from a clearer discussion of the author's positionality and the limitations of the proposed approach."
+        },
+        "receptivity_to_critique": {
+          "score": 3,
+          "justification": "The thesis acknowledges the existing limitations of the CHORUS system but does not engage deeply with potential critiques of the proposed proactive model, which could indicate a need for more openness to external challenges."
+        }
+      },
+      "plan": {
+        "gap_map": [
+          {
+            "dimension": "theoretical_integration",
+            "current": "Mentions CHORUS system limitations without broader theoretical connections.",
+            "target": "Integrates findings into knowledge management and information retrieval theories.",
+            "priority": "high"
+          },
+          {
+            "dimension": "evidence_evaluation",
+            "current": "Brief reference to literature without deep engagement.",
+            "target": "Conducts a thorough literature review addressing quality and conflicting evidence.",
+            "priority": "medium"
+          },
+          {
+            "dimension": "self_reflexivity",
+            "current": "Moderate awareness of assumptions and positionality.",
+            "target": "Provides clear discussion on author\u2019s positionality and limitations of the approach.",
+            "priority": "medium"
+          },
+          {
+            "dimension": "argument_construction",
+            "current": "Clear research question but needs more detail on evidence support.",
+            "target": "Enhances argument through detailed evidence alignment.",
+            "priority": "low"
+          }
+        ],
+        "exercises": [
+          {
+            "title": "Literature Review Deep Dive",
+            "description": "Conduct a comprehensive literature review focusing on knowledge management and information retrieval theories and their applications in proactive systems.",
+            "dimension": "evidence_evaluation"
+          },
+          {
+            "title": "Theoretical Framework Workshop",
+            "description": "Participate in a workshop to develop a theoretical framework that connects the proactive Interdisciplinary Discovery Agent with existing theories.",
+            "dimension": "theoretical_integration"
+          },
+          {
+            "title": "Positionality Reflection Journal",
+            "description": "Maintain a reflective journal to articulate assumptions, positionality, and the implications of these on the proposed research.",
+            "dimension": "self_reflexivity"
+          }
+        ],
+        "trajectory": "Focus on enhancing theoretical integration by connecting your findings to existing frameworks in knowledge management. Simultaneously, conduct a thorough literature review to evaluate evidence quality. Improve self-reflexivity by reflecting on your positionality, which will add depth to your analysis and argument construction."
+      },
+      "improvement_scores": {
+        "theoretical_integration": 4.0,
+        "evidence_evaluation": 3.0,
+        "self_reflexivity": 4.0,
+        "argument_construction": 2.0
+      }
+    },
+    {
+      "author": "YanjingAveryLi",
+      "early_week": 2,
+      "late_week": 9,
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The thesis presents a clear and logical framework for understanding the relationship between writing style changes and depression risk across different social media contexts. The claims are well-supported by the context provided, although further elaboration on specific warrants could strengthen the argument."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "While the thesis acknowledges the potential for different social norms to influence language use, it does not sufficiently address how it will distinguish between correlation and causation or the quality of sources used for evidence. A more robust discussion of conflicting evidence would enhance this dimension."
+        },
+        "methodological_reasoning": {
+          "score": 4,
+          "justification": "The design choices appear justified in terms of comparing users across different social media contexts. However, the thesis could benefit from a more explicit identification of potential validity threats and scope conditions that could affect the outcomes."
+        },
+        "theoretical_integration": {
+          "score": 3,
+          "justification": "The thesis suggests a connection between findings and existing frameworks regarding social media behavior and mental health, but it primarily focuses on descriptive patterns. Greater integration of relevant theoretical constructs would enhance its depth."
+        },
+        "self_reflexivity": {
+          "score": 2,
+          "justification": "There is minimal discussion of the author's assumptions, positionality, or limitations of the research. A more thorough reflection on these aspects would improve the overall rigor and credibility of the study."
+        },
+        "receptivity_to_critique": {
+          "score": 3,
+          "justification": "The thesis engages with potential challenges related to social norms and language use but does not explicitly address how it will respond to critiques regarding its methodology or theoretical claims. A more substantial engagement with possible counterarguments would be beneficial."
+        }
+      },
+      "plan": {
+        "gap_map": [
+          {
+            "dimension": "evidence_evaluation",
+            "current": "The thesis acknowledges the potential for different social norms to influence language use but lacks a robust discussion on correlation vs causation and quality of sources.",
+            "target": "A comprehensive approach to differentiate correlation from causation and evaluate the quality of evidence used, including conflicting evidence.",
+            "priority": "high"
+          },
+          {
+            "dimension": "theoretical_integration",
+            "current": "Limited integration of theoretical constructs with a focus on descriptive patterns.",
+            "target": "Greater integration of established psychological and sociolinguistic frameworks to enhance depth.",
+            "priority": "medium"
+          },
+          {
+            "dimension": "self_reflexivity",
+            "current": "Minimal discussion of author assumptions, positionality, or limitations.",
+            "target": "A thorough reflection on these aspects to improve rigor and credibility.",
+            "priority": "high"
+          },
+          {
+            "dimension": "receptivity_to_critique",
+            "current": "Engagement with potential challenges but lacks explicit responses to critiques.",
+            "target": "Substantial engagement with possible counterarguments to strengthen arguments.",
+            "priority": "medium"
+          }
+        ],
+        "exercises": [
+          {
+            "title": "Literature Review Development",
+            "description": "Conduct a comprehensive literature review focusing on language use and mental health in social media contexts, identifying key studies and theoretical frameworks.",
+            "dimension": "theoretical_integration"
+          },
+          {
+            "title": "Methodological Elaboration",
+            "description": "Develop a detailed methodological appendix that outlines specific writing style features to be analyzed and the rationale for selecting matched controls.",
+            "dimension": "methodological_reasoning"
+          },
+          {
+            "title": "Self-Reflexivity Workshop",
+            "description": "Participate in a self-reflexivity workshop to explore personal assumptions and positionality in relation to the research topic.",
+            "dimension": "self_reflexivity"
+          },
+          {
+            "title": "Critique Response Plan",
+            "description": "Create a plan for addressing potential critiques of the methodology and theoretical claims, including counterarguments and responses.",
+            "dimension": "receptivity_to_critique"
+          }
+        ],
+        "trajectory": "To enhance the thesis, prioritize addressing evidence evaluation and self-reflexivity, as these are critical for establishing credibility and depth. Concurrently, focus on integrating relevant theoretical frameworks to enrich the analysis of user behavior. Continuous engagement with feedback and critiques will further strengthen the argument and methodology."
+      },
+      "improvement_scores": {
+        "evidence_evaluation": 3.0,
+        "theoretical_integration": 4.0,
+        "self_reflexivity": 2.0,
+        "receptivity_to_critique": 3.0
+      }
+    },
+    {
+      "author": "qiuyi0919",
+      "early_week": 2,
+      "late_week": 9,
+      "profile": {
+        "argument_construction": {
+          "score": 3,
+          "justification": "Could not parse diagnostician output."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "Could not parse diagnostician output."
+        },
+        "methodological_reasoning": {
+          "score": 3,
+          "justification": "Could not parse diagnostician output."
+        },
+        "theoretical_integration": {
+          "score": 3,
+          "justification": "Could not parse diagnostician output."
+        },
+        "self_reflexivity": {
+          "score": 3,
+          "justification": "Could not parse diagnostician output."
+        },
+        "receptivity_to_critique": {
+          "score": 3,
+          "justification": "Could not parse diagnostician output."
+        }
+      },
+      "plan": {
+        "gap_map": [],
+        "exercises": [],
+        "trajectory": "Development plan could not be generated."
+      },
+      "improvement_scores": {
+        "argument_construction": 5.0,
+        "evidence_evaluation": 5.0,
+        "methodological_reasoning": 5.0,
+        "theoretical_integration": 5.0,
+        "self_reflexivity": 5.0,
+        "receptivity_to_critique": 5.0
+      }
+    },
+    {
+      "author": "DotIN13",
+      "early_week": 2,
+      "late_week": 9,
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The thesis presents a clear research question and establishes a logical connection between the concepts of multi-agent deliberation and mathematical accuracy. The selection of prior work provides a solid foundation for the argument, though it could further elaborate on the specific mechanisms by which structured reasoning impacts performance."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "While the thesis references prior studies, it does not clearly differentiate between correlation and causation related to the effects of explicit reasoning. Additionally, it lacks a thorough discussion on the quality of the sources cited and how conflicting evidence may be addressed."
+        },
+        "methodological_reasoning": {
+          "score": 3,
+          "justification": "The thesis implies a controlled experimental design but does not explicitly justify the chosen methodologies or discuss potential validity threats. It would benefit from a clearer articulation of the scope conditions under which the findings may apply."
+        },
+        "theoretical_integration": {
+          "score": 4,
+          "justification": "The thesis connects its findings to existing frameworks around attention mechanisms and reasoning in large language models. However, it could enhance its theoretical integration by discussing how its findings might challenge or extend these frameworks rather than simply describing patterns."
+        },
+        "self_reflexivity": {
+          "score": 2,
+          "justification": "The excerpt does not demonstrate significant self-reflexivity, lacking an explicit acknowledgment of the author's assumptions, positionality, or the limitations of the study. This aspect needs more attention to enhance the overall rigor of the research."
+        },
+        "receptivity_to_critique": {
+          "score": 3,
+          "justification": "The thesis shows some awareness of alternative perspectives through references to prior research, but it does not engage deeply with potential critiques or challenges to its approach. A more robust engagement with counterarguments would strengthen this dimension."
+        }
+      },
+      "plan": {
+        "gap_map": [
+          {
+            "dimension": "self_reflexivity",
+            "current": "Limited acknowledgment of author's assumptions and positionality.",
+            "target": "Explicit acknowledgment of assumptions, positionality, and study limitations.",
+            "priority": "high"
+          },
+          {
+            "dimension": "evidence_evaluation",
+            "current": "Lack of differentiation between correlation and causation.",
+            "target": "Clear discussion of causation, source quality, and addressing conflicting evidence.",
+            "priority": "medium"
+          },
+          {
+            "dimension": "methodological_reasoning",
+            "current": "Implicit justification of methodologies and validity threats.",
+            "target": "Clear articulation of methodologies, validity threats, and scope conditions.",
+            "priority": "medium"
+          },
+          {
+            "dimension": "receptivity_to_critique",
+            "current": "Limited engagement with potential critiques.",
+            "target": "Robust engagement with counterarguments and alternative perspectives.",
+            "priority": "medium"
+          }
+        ],
+        "exercises": [
+          {
+            "title": "Reflexivity Journal",
+            "description": "Maintain a journal to reflect on your assumptions, positionality, and limitations of your research. Write entries after each major writing session.",
+            "dimension": "self_reflexivity"
+          },
+          {
+            "title": "Causation vs Correlation Workshop",
+            "description": "Participate in a workshop focused on differentiating correlation from causation in research. Apply these concepts to your thesis data and sources.",
+            "dimension": "evidence_evaluation"
+          },
+          {
+            "title": "Methodology Justification Outline",
+            "description": "Create an outline that explicitly justifies your chosen methodologies, discusses validity threats, and defines the scope conditions for your findings.",
+            "dimension": "methodological_reasoning"
+          },
+          {
+            "title": "Counterargument Engagement Exercise",
+            "description": "Identify at least three counterarguments to your thesis and write a response to each, explaining why your position remains valid.",
+            "dimension": "receptivity_to_critique"
+          }
+        ],
+        "trajectory": "Focus on enhancing self-reflexivity by regularly reflecting on personal assumptions and the study's limitations. Improve evidence evaluation by actively differentiating between correlation and causation in your analysis. Strengthen methodological reasoning through thorough justification of your methods and addressing potential validity threats. Lastly, engage more deeply with critiques to bolster the rigor and credibility of your research."
+      },
+      "improvement_scores": {
+        "self_reflexivity": 3.0,
+        "evidence_evaluation": 2.0,
+        "methodological_reasoning": 4.0,
+        "receptivity_to_critique": 3.0
+      }
+    },
+    {
+      "author": "ruoting-Y",
+      "early_week": 2,
+      "late_week": 9,
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The thesis presents a clear research question and logically connects the framing of intermedia agenda-setting to the proposed AI-first research design, demonstrating a coherent argument structure."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "While the thesis acknowledges existing observational approaches, it does not thoroughly evaluate the quality of the sources or address potential conflicting evidence in the literature."
+        },
+        "methodological_reasoning": {
+          "score": 4,
+          "justification": "The thesis justifies its AI-first approach and identifies the dynamics of attention and memory as critical design choices, although it could further elaborate on potential validity threats."
+        },
+        "theoretical_integration": {
+          "score": 4,
+          "justification": "The thesis connects its findings to established theories of intermedia agenda-setting, moving beyond mere pattern description to suggest a novel framework for understanding media influence."
+        },
+        "self_reflexivity": {
+          "score": 3,
+          "justification": "The thesis shows some awareness of the assumptions underlying its approach but lacks a detailed discussion on the author's positionality and the limitations of the proposed model."
+        },
+        "receptivity_to_critique": {
+          "score": 3,
+          "justification": "The thesis acknowledges existing critiques of observational methods but does not engage deeply with potential counterarguments or alternative perspectives on the proposed research design."
+        }
+      },
+      "plan": {
+        "gap_map": [
+          {
+            "dimension": "evidence_evaluation",
+            "current": "Score 3: Acknowledges existing observational approaches but lacks thorough source evaluation.",
+            "target": "Score 4: Evaluates the quality of sources and addresses conflicting evidence.",
+            "priority": "High"
+          },
+          {
+            "dimension": "self_reflexivity",
+            "current": "Score 3: Shows some awareness of assumptions but lacks discussion on positionality.",
+            "target": "Score 4: Provides a detailed discussion of author positionality and model limitations.",
+            "priority": "Medium"
+          },
+          {
+            "dimension": "receptivity_to_critique",
+            "current": "Score 3: Acknowledges critiques but does not engage deeply with counterarguments.",
+            "target": "Score 4: Engages with potential counterarguments and alternative perspectives.",
+            "priority": "Medium"
+          }
+        ],
+        "exercises": [
+          {
+            "title": "Conduct a Literature Review",
+            "description": "Perform a comprehensive review of existing observational methods and evaluate their sources, addressing conflicting evidence.",
+            "dimension": "evidence_evaluation"
+          },
+          {
+            "title": "Develop a Positionality Statement",
+            "description": "Write a detailed statement on your positionality as a researcher, discussing assumptions and limitations of your model.",
+            "dimension": "self_reflexivity"
+          },
+          {
+            "title": "Engage with Critiques",
+            "description": "Identify and respond to at least three critiques of your proposed research design, incorporating alternative perspectives.",
+            "dimension": "receptivity_to_critique"
+          },
+          {
+            "title": "Clarify Methodological Approach",
+            "description": "Clearly define and justify your methodological approach (quantitative, qualitative, or mixed methods) in relation to your research question.",
+            "dimension": "methodological_reasoning"
+          }
+        ],
+        "trajectory": "To enhance your thesis, focus on deepening your engagement with existing literature and critiques while clarifying your methodological approach. Prioritize the evaluation of sources and the articulation of your positionality to strengthen the overall argument. Aim to achieve a more robust theoretical and methodological foundation that bridges your work with established theories and practices."
+      },
+      "improvement_scores": {
+        "evidence_evaluation": 3.0,
+        "self_reflexivity": 2.0,
+        "receptivity_to_critique": 3.0
+      }
+    }
+  ],
+  "mean_improvement_by_dimension": {
+    "theoretical_integration": 4.083333333333333,
+    "argument_construction": 4.0,
+    "self_reflexivity": 3.176470588235294,
+    "evidence_evaluation": 3.2941176470588234,
+    "receptivity_to_critique": 3.3636363636363638,
+    "methodological_reasoning": 4.222222222222222
+  }
+}

@@ -8,7 +8,7 @@ If the 6-dimension diagnostician produces differentiated profiles across theses 
 
 ## Method
 
-- **Thesis sampling:** 10 theses sampled from the 6 embedding clusters (same clustering as `figures/02_embedding_by_keywords.png`: keyword/abstract embeddings, KMeans, `random_state=42`). This ensures variation across thesis types (not only computational vs qualitative).
+- **Thesis sampling:** 10 theses sampled from the 6 embedding clusters (same clustering as `figures/02_embedding_clusters.png`: keyword/abstract embeddings, KMeans, `random_state=42`). This ensures variation across thesis types (not only computational vs qualitative).
 - **Models:** Three sizes run locally for comparison:
   - `Qwen/Qwen2.5-0.5B-Instruct`
   - `Qwen/Qwen2.5-1.5B-Instruct`

@@ -1,6 +1,6 @@
 # Data and generated outputs (data/ is tracked; push all including macs_theses.json)
 logs/
-figures/
+# figures/ — keep figures tracked for remote access
 
 # Large model files
 *.pt

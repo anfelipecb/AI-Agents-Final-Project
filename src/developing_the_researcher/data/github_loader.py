@@ -61,13 +61,22 @@ class GitHubIssuesLoader:
         return issues
 
     def fetch_comments(self, issue_number: int) -> list[dict]:
-        """Fetch comments for an issue."""
+        """Fetch all comments for an issue (paginated; GitHub defaults to 30 per page)."""
         url = f"{GITHUB_API_BASE}/repos/{self.owner}/{self.repo}/issues/{issue_number}/comments"
-        data = self._get(url)
-        if not isinstance(data, list):
-            return []
-        time.sleep(REQUEST_DELAY)
-        return data
+        all_comments: list[dict] = []
+        page = 1
+        per_page = 100
+        while True:
+            params = {"per_page": per_page, "page": page}
+            data = self._get(url, params)
+            if not isinstance(data, list):
+                break
+            all_comments.extend(data)
+            if len(data) < per_page:
+                break
+            page += 1
+            time.sleep(REQUEST_DELAY)
+        return all_comments
 
     def load_github_corpus(self, force_refresh: bool = False) -> list[dict]:
         """Load corpus: issues + comments + reactions. Uses cache if available."""

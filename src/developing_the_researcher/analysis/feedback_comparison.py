@@ -98,6 +98,11 @@ def run_side_by_side_comparison(
         deliberation_log = "\n\n".join(deliberation_log_parts)
         c3_feedback = committee.committee_deliberation(thesis_text, agents)
 
+        # Save deliberation text for download (Option A)
+        delib_txt_path = out_dir / f"deliberation_thesis_{tid}.txt"
+        delib_txt_path.write_text(deliberation_log, encoding="utf-8")
+        saved.append(delib_txt_path)
+
         # Side-by-side figure
         fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 5))
         fig.patch.set_facecolor(FIGURE_BG)
