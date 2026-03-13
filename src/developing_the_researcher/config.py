@@ -23,6 +23,7 @@ ABSTRACTS_PATH = DATA_DIR / "abstracts_for_steering.json"
 GITHUB_ISSUES_PATH = DATA_DIR / "github_issues.json"
 PILOT_RESULTS_PATH = DATA_DIR / "pilot_results.json"
 GITHUB_VALIDATION_PATH = DATA_DIR / "github_validation.json"
+GITHUB_MEMO_VALIDATION_PATH = DATA_DIR / "github_memo_validation.json"
 QUALITATIVE_SAMPLES_PATH = DATA_DIR / "qualitative_samples.json"
 
 # Model names

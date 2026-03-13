@@ -45,6 +45,7 @@ def main() -> None:
     parser.add_argument("--side-by-side", action="store_true", help="Run C1 vs C3 feedback comparison for 2–3 theses; save side-by-side and deliberation figures")
     parser.add_argument("--development-plan-example", action="store_true", help="Generate development plan example figure for 1 thesis")
     parser.add_argument("--full-experiment", action="store_true", help="Run full experiment (3×3×5) and save bar charts")
+    parser.add_argument("--github-memo-validation", action="store_true", help="Run GitHub memo retrospective validation (Week 1 plan vs Week 9) with GPT-4-mini; generate all figures")
     args = parser.parse_args()
 
     if args.fetch_corpus:
@@ -117,6 +118,20 @@ def main() -> None:
         corpus = gh.load_github_corpus(force_refresh=True)
         print(f"Fetched {len(corpus)} memo comments to", GITHUB_ISSUES_PATH)
         gh.close()
+
+    if args.github_memo_validation:
+        print("Running GitHub memo retrospective validation...")
+        from developing_the_researcher.pipeline.github_memo_validation import (
+            run_github_memo_validation_full,
+            verify_openai,
+        )
+        if not verify_openai():
+            print("ERROR: OpenAI API verification failed. Check OPENAI_API_KEY in .env")
+        else:
+            results, paths = run_github_memo_validation_full(force_refresh=args.fetch_github)
+            print(f"Validation complete. {results.get('authors_with_both', 0)} authors with both weeks.")
+            print("Mean improvement by dimension:", results.get("mean_improvement_by_dimension", {}))
+            print(f"Figures saved: {paths}")
 
     if args.development_plan_example:
         print("Generating development plan example figure...")
