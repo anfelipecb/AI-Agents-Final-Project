@@ -43,7 +43,8 @@ Validate whether students who received a **development plan** (based on their We
 - **Data:** `data/github_memo_validation.json` — profiles, plans, improvement scores per author.
 - **Figures (in `docs/validation_outputs/`):**
   - `github_memo_validation.png` — improvement bar chart.
-  - `github_improvement_heatmap.png` — author × dimension heatmap.
+  - `github_improvement_heatmap.png` — top 20 authors × dimension heatmap (inferno palette).
+  - `github_course_improvement_heatmap.png` — week × dimension mean competency scores (inferno palette).
 
 ## Example: yangyuwang
 

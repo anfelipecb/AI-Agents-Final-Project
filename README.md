@@ -8,6 +8,15 @@ A final project on personalized committee feedback for thesis development: a six
 
 Competency development matters more than the thesis artifact. We study whether **personalized adversarial committees** (matched to a student’s weakest dimensions) improve development plans and engagement compared to a single generic agent or a random committee. The project targets mechanical AI use by emphasizing substantive engagement with feedback.
 
+## What's Done
+
+- **Result 2:** Qwen model comparison (0.5B / 1.5B / 7B) — radar charts in `docs/validation_outputs/`
+- **Result 3:** Committee assembly demo
+- **Result 4:** C1 vs C3 feedback comparison + deliberation excerpts
+- **Result 5:** Development plan example
+- **Result 6:** Pilot (plan quality, feedback specificity by condition)
+- **Result 7:** GitHub memo retrospective (improvement heatmap, validation)
+
 ## Method
 
 - **Three conditions:** single_agent (one helpful reviewer), random_committee (3 agents chosen at random), prescribed_committee (diagnose → assemble committee by lowest dimensions → deliberation → development plan).
@@ -17,6 +26,8 @@ Competency development matters more than the thesis artifact. We study whether *
 - **Models:** committee (diagnostician, assemble_committee, committee_deliberation), development plan generator, embeddings, safety monitor (design feature only).
 
 ## How to Run
+
+**Colab (recommended):** `memo_w9_integration.ipynb` integrates GitHub clone and Colab GPU. Clone from GitHub, run cells; use Colab Secrets for `OPENAI_API_KEY` and `GITHUB_TOKEN`; download `colab_results.zip` before session ends.
 
 **Local (uv):**
 
@@ -31,7 +42,13 @@ uv run python run.py --fetch-github   # fetch GitHub issues only
 uv run pytest tests/
 ```
 
-**Colab:** Use `pip` in notebook cells (e.g. `!pip install -q ...` or `!pip install -e .`). See `memo_w9_integration.ipynb`.
+Note: Result 2 (three Qwen sizes) requires significant GPU memory—Colab T4/A100 recommended.
+
+## Outputs
+
+- `docs/validation_outputs/` — all figures (radar, committee, feedback, deliberation, pilot, GitHub)
+- `data/` — pilot_results.json, diagnostician_validation.json, github_memo_validation.json
+- The notebook has a download cell that zips results for local use.
 
 ## Structure
 

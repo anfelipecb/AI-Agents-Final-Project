@@ -8,6 +8,11 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import numpy as np
 
+try:
+    from openai import BadRequestError as OpenAIBadRequestError
+except ImportError:
+    OpenAIBadRequestError = None  # fallback if openai not installed
+
 from ..config import (
     COMPETENCY_DIMENSIONS,
     DOCS_VALIDATION_OUTPUTS,
@@ -50,6 +55,13 @@ def verify_openai() -> bool:
     except Exception as e:
         print(f"OpenAI verification failed: {e}")
         return False
+
+
+def _sanitize_for_api(text: str) -> str:
+    """Remove control characters and null bytes that can break OpenAI API JSON requests."""
+    if not text:
+        return ""
+    return "".join(c for c in text if c in "\t\n\r" or ord(c) >= 32)
 
 
 def _get_memo_for_author_week(panel: list[dict], author: str, week: int) -> str | None:
@@ -123,16 +135,23 @@ def run_retrospective_validation(force_refresh: bool = False) -> dict:
         if not memo_early or not memo_late:
             continue
 
-        # Week 1 pipeline
-        profile = diagnose_competencies(memo_early[:800], _gen)
-        agents = assemble_committee(profile)
-        feedback = run_committee_deliberation(memo_early, agents, gen.generate)
-        plan = development_plan(profile, feedback, _gen)
-        gap_dims = _extract_gap_dimensions(plan)
+        # Sanitize memo text to avoid control chars / invalid Unicode that break API JSON
+        memo_early = _sanitize_for_api(memo_early)
+        memo_late = _sanitize_for_api(memo_late)
+        if not memo_early or not memo_late:
+            continue
 
-        # Judge: Week 9 improvement
-        gap_summary = json.dumps([g for g in plan.get("gap_map", []) if isinstance(g, dict)][:5])
-        judge_prompt = f"""Given this Week {early_week} development plan gap_map and targets, and this Week {late_week} memo text from the same student, rate 1-5 how much the student improved in each targeted dimension (1=no improvement, 5=clear improvement).
+        try:
+            # Week 1 pipeline
+            profile = diagnose_competencies(memo_early[:800], _gen)
+            agents = assemble_committee(profile)
+            feedback = run_committee_deliberation(memo_early, agents, gen.generate)
+            plan = development_plan(profile, feedback, _gen)
+            gap_dims = _extract_gap_dimensions(plan)
+
+            # Judge: Week 9 improvement
+            gap_summary = json.dumps([g for g in plan.get("gap_map", []) if isinstance(g, dict)][:5])
+            judge_prompt = f"""Given this Week {early_week} development plan gap_map and targets, and this Week {late_week} memo text from the same student, rate 1-5 how much the student improved in each targeted dimension (1=no improvement, 5=clear improvement).
 
 Gap map (dimensions and targets):
 {gap_summary}
@@ -141,17 +160,23 @@ Week {late_week} memo:
 {memo_late[:1500]}
 
 Respond with a JSON object: {{"dimension_name": score, ...}} for each dimension in the gap_map. Use only these dimension keys: {gap_dims if gap_dims else list(COMPETENCY_DIMENSIONS.keys())}."""
-        judge_raw = gen.generate(judge_prompt, system_prompt="Output only valid JSON.", max_new_tokens=300)
-        improvement_scores = _parse_judge_output(judge_raw)
+            judge_raw = gen.generate(judge_prompt, system_prompt="Output only valid JSON.", max_new_tokens=300)
+            improvement_scores = _parse_judge_output(judge_raw)
 
-        results.append({
-            "author": author,
-            "early_week": early_week,
-            "late_week": late_week,
-            "profile": profile,
-            "plan": plan,
-            "improvement_scores": improvement_scores,
-        })
+            results.append({
+                "author": author,
+                "early_week": early_week,
+                "late_week": late_week,
+                "profile": profile,
+                "plan": plan,
+                "improvement_scores": improvement_scores,
+            })
+        except Exception as e:
+            if OpenAIBadRequestError is not None and isinstance(e, OpenAIBadRequestError):
+                print(f"Skipping author {author}: OpenAI API BadRequest (likely invalid JSON from memo content): {e}")
+            else:
+                print(f"Skipping author {author}: {e}")
+            continue
 
     # Aggregate
     all_dims = set()
@@ -166,6 +191,7 @@ Respond with a JSON object: {{"dimension_name": score, ...}} for each dimension 
         "corpus_size": len(corpus),
         "panel_validation": validation,
         "authors_with_both": len(authors),
+        "authors_processed": len(results),
         "early_week": early_week,
         "late_week": late_week,
         "results": results,
@@ -261,7 +287,9 @@ def plot_competency_evolution_by_week(
         items = by_week[week][:max_per_week]
         scores_by_dim: dict[str, list[float]] = {d: [] for d in dims}
         for item in items:
-            text = item.get("memo_text", "")[:800]
+            text = _sanitize_for_api(item.get("memo_text", "")[:800])
+            if not text:
+                continue
             profile = diagnose_competencies(text, _gen)
             for d in dims:
                 s = profile.get(d, {}).get("score", 3)
@@ -343,7 +371,9 @@ def plot_course_improvement_by_week(
         items = by_week[week][:max_per_week]
         scores_by_dim: dict[str, list[float]] = {d: [] for d in dims}
         for item in items:
-            text = item.get("memo_text", "")[:800]
+            text = _sanitize_for_api(item.get("memo_text", "")[:800])
+            if not text:
+                continue
             profile = diagnose_competencies(text, _gen)
             for d in dims:
                 s = profile.get(d, {}).get("score", 3)
