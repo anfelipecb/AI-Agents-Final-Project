@@ -4,8 +4,14 @@ import argparse
 import sys
 from pathlib import Path
 
-# Ensure project root is on path
+# Load .env before any imports that use OpenAI
 PROJECT_ROOT = Path(__file__).resolve().parent
+_env = PROJECT_ROOT / ".env"
+if _env.exists():
+    from dotenv import load_dotenv
+    load_dotenv(_env)
+
+# Ensure project root is on path
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 

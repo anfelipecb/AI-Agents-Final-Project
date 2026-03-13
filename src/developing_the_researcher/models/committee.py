@@ -1,4 +1,6 @@
 """CommitteeLoader: Skill Diagnostician, Adversarial Critic, Committee (Qwen2.5-7B)."""
+from typing import Any, Callable
+
 from ..config import COMPETENCY_DIMENSIONS, LLM_MODEL
 
 # Five agent personas for committee deliberation (each can "cover" 1–2 competency dimensions)
@@ -131,3 +133,51 @@ As an Adversarial Critic, give targeted critique challenging framing and evidenc
             reviews.append(f"[{agent['name']}]: {rev}")
         synthesis_prompt = "Synthesize the following committee reviews into one consolidated feedback paragraph (3-5 sentences) for the student.\n\n" + "\n\n".join(reviews)
         return self.generate(synthesis_prompt, system_prompt="You produce clear, actionable consolidated feedback.", max_new_tokens=300)
+
+
+def assemble_committee(profile: dict[str, Any]) -> list[dict]:
+    """Standalone: select 3 agents from persona pool based on lowest-scoring dimensions.
+    Use when you have a generate_fn (e.g. OpenAI) and don't want to load CommitteeLoader."""
+    dim_scores = []
+    for dim in COMPETENCY_DIMENSIONS:
+        val = profile.get(dim, {})
+        score = val.get("score", 3) if isinstance(val, dict) else 3
+        dim_scores.append((dim, score))
+    dim_scores.sort(key=lambda x: x[1])
+    lowest_dims = [d[0] for d in dim_scores[:3]]
+    agents = []
+    used = set()
+    for dim in lowest_dims:
+        for persona in AGENT_PERSONAS:
+            if persona in agents:
+                continue
+            covers = persona.get("covers", [persona["dimension"]])
+            if dim in covers:
+                agents.append(persona)
+                used.add(persona["name"])
+                break
+    while len(agents) < 3:
+        for p in AGENT_PERSONAS:
+            if p["name"] not in used:
+                agents.append(p)
+                used.add(p["name"])
+                break
+        if len(agents) >= 3:
+            break
+    return agents[:3]
+
+
+def run_committee_deliberation(
+    thesis: str,
+    agents: list[dict],
+    generate_fn: Callable[[str, str | None, int], str],
+) -> str:
+    """Standalone: run committee deliberation with a generate_fn (e.g. OpenAI)."""
+    thesis_excerpt = thesis[:600]
+    reviews = []
+    for agent in agents:
+        prompt = f"""Review this thesis excerpt and provide brief, targeted feedback from your perspective. Thesis: {thesis_excerpt}"""
+        rev = generate_fn(prompt, agent["system_prompt"], 200)
+        reviews.append(f"[{agent['name']}]: {rev}")
+    synthesis_prompt = "Synthesize the following committee reviews into one consolidated feedback paragraph (3-5 sentences) for the student.\n\n" + "\n\n".join(reviews)
+    return generate_fn(synthesis_prompt, "You produce clear, actionable consolidated feedback.", 300)

@@ -8,6 +8,65 @@ from ..data import GitHubIssuesLoader
 from ..models import EmbeddingLoader
 
 
+def build_memo_panel(corpus: list[dict]) -> list[dict]:
+    """Build panel: list of {author, week, memo_text, issue_id, created_at, thumbs_up}.
+    Filter: keep memos with len(memo_text) >= 100."""
+    panel = []
+    for c in corpus:
+        text = c.get("memo_text", "") or ""
+        if len(text) < 100:
+            continue
+        panel.append({
+            "author": c.get("author", "unknown"),
+            "week": c.get("week", 0),
+            "memo_text": text,
+            "issue_id": c.get("issue_id"),
+            "created_at": c.get("created_at", ""),
+            "thumbs_up": c.get("thumbs_up", 0),
+        })
+    return panel
+
+
+def get_authors_with_both_weeks(
+    panel: list[dict],
+    early_week: int = 1,
+    late_week: int = 9,
+) -> list[str]:
+    """Return authors who have memos in both early_week and late_week.
+    If early_week has no data, use earliest available week; if late_week has none, use latest."""
+    by_author_week: dict[str, set[int]] = {}
+    for p in panel:
+        a = p.get("author", "unknown")
+        w = p.get("week", 0)
+        if a and w:
+            by_author_week.setdefault(a, set()).add(w)
+    weeks_present = set()
+    for s in by_author_week.values():
+        weeks_present.update(s)
+    if not weeks_present:
+        return []
+    early = early_week if early_week in weeks_present else min(weeks_present)
+    late = late_week if late_week in weeks_present else max(weeks_present)
+    result = [
+        a for a, weeks in by_author_week.items()
+        if early in weeks and late in weeks
+    ]
+    return result
+
+
+def validate_panel(panel: list[dict]) -> dict:
+    """Validate panel; return {n_authors, n_memos, weeks_present, authors_with_both}."""
+    authors = {p.get("author", "unknown") for p in panel if p.get("author")}
+    weeks = {p.get("week", 0) for p in panel if p.get("week")}
+    authors_with_both = set(get_authors_with_both_weeks(panel))
+    return {
+        "n_authors": len(authors),
+        "n_memos": len(panel),
+        "weeks_present": sorted(weeks),
+        "authors_with_both": len(authors_with_both),
+    }
+
+
 def run_github_validation(force_refresh: bool = False) -> dict:
     """Load or fetch GitHub memo corpus, embed, compute trajectories, save to data/github_validation.json."""
     gh = GitHubIssuesLoader()
