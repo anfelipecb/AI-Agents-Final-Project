@@ -57,7 +57,7 @@
 
 **14. Qualitative** — C3 feedback dimension-targeted; C1 generic. *Show:* feedback_comparison_thesis_13058.png, deliberation_thesis_13058.png. Quotes: deliberation_thesis_13058.txt.
 
-**15. GitHub validation** — 345 memos, 41 authors, 8 weeks. Retrospective: diagnose Week 2 → plan → judge Week 9. Mean improvement 3.2–4.2 by dimension. *Show:* github_improvement_heatmap.png, github_memo_validation.png.
+**15. GitHub validation** — 345 memos, 41 authors, 8 weeks. Retrospective: diagnose Week 2 → plan → judge Week 9. *Key stats:* methodological reasoning 4.15 (highest), argument/theory/evidence 3.5–3.6, self-reflexivity 2.6, scope_of_research 2.0 (lowest). Heatmap: per-author variation; scope is bottleneck. *Show:* github_improvement_heatmap.png, github_memo_validation.png.
 
 ---
 
@@ -65,9 +65,9 @@
 
 **16. Data: pilot** — MACSS corpus; 6 embedding clusters; stratified sampling; 3 conditions × n per condition.
 
-**17. Data: GitHub retrospective** — 345 memo comments, 49 authors, 8 weeks; 41 with both Week 2 & 9. Retrospective pipeline; ecological validation only (no treatment deployed). *Show:* github_memo_activity.png (memos per week), github_course_improvement_heatmap.png (week × dimension evolution).
+**17. Data: GitHub retrospective** — 345 memo comments, 49 authors, 8 weeks; 41 with both Week 2 & 9; ~40 memos/week. Course evolution: evidence & method strongest; reflexivity consistently weakest. *Show:* github_memo_activity.png, github_course_improvement_heatmap.png, github_competency_evolution.png.
 
-**18. Interpretation** — Pilot: prescribed beats random/single. GitHub: dimensions map to observable growth. Qualitative backs quantitative.
+**18. Interpretation** — Pilot: prescribed beats random/single. GitHub: method, argument, theory improve most; reflexivity and scope harder. Per-author variation supports personalized feedback. Qualitative backs quantitative.
 
 ---
 

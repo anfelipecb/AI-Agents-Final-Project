@@ -54,7 +54,7 @@ Corpus, digital doubles, run each condition, compute metrics.
 
 **Qualitative.** Side by side, C3 feedback is dimension-targeted. C1 is generic. The deliberation figure makes that clear.
 
-**GitHub.** Real course memos—345 comments, 41 authors, week two to week nine. We run the pipeline retrospectively: diagnose week two, generate a hypothetical plan, judge week nine on those targets. Students never received the plans. This is ecological validation: do our dimensions map onto observable growth? Mean improvement runs 3.2 to 4.2 by dimension. The heatmap shows per-author variation.
+**GitHub.** Real course memos—345 comments, 41 authors, week two to week nine. Retrospective pipeline: diagnose week two, plan, judge week nine. Students never received the plans—ecological validation. The bar chart shows mean improvement by dimension: methodological reasoning highest at 4.15; argument, theory, evidence around 3.5 to 3.6; self-reflexivity 2.6; scope of research lowest at 2.0. The heatmap shows per-author variation—scope is a bottleneck; some authors like GitBagguetti and leahdimsu improve across most dimensions; others show specific gaps. That variation supports why personalized feedback matters.
 
 ---
 
@@ -62,13 +62,13 @@ Corpus, digital doubles, run each condition, compute metrics.
 
 **Pilot data.** MACSS corpus, six embedding clusters, stratified sampling, three conditions.
 
-**GitHub data.** 345 memo comments, 49 authors, eight weeks. Forty-one had memos in both week two and week nine. The activity chart shows participation; the course heatmap shows competency evolution by week across the quarter.
+**GitHub data.** 345 memo comments, 49 authors, eight weeks; 41 with both week two and week nine. About 40 memos per week—steady participation. The course heatmap and competency evolution chart show evidence and method are consistently strongest; reflexivity is consistently weakest across the quarter.
 
 ---
 
 ## [18] Interpretation
 
-Pilot says prescribed beats random and single. GitHub says our dimensions map onto real growth. Qualitative backs quantitative. The story holds together.
+Pilot says prescribed beats random and single. GitHub says our dimensions map onto real growth—method, argument, theory improve most; reflexivity and scope are harder. Per-author variation in the heatmap supports why personalized, dimension-targeted feedback matters. Qualitative backs quantitative.
 
 ---
 
