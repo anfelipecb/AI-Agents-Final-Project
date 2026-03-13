@@ -137,7 +137,7 @@ def _plot_radar_axes(ax: plt.Axes, dims: list[str]) -> tuple[list[float], list[f
     ax.set_theta_zero_location("N")
     ax.set_xticks(angles[:-1])
     labels = [RADAR_DIM_LABELS.get(d, d.replace("_", " ")[:12]) for d in dims]
-    ax.set_xticklabels(labels, size=9, pad=4)
+    ax.set_xticklabels(labels, size=9)
     ax.set_ylim(0, 5)
     ax.set_facecolor(FIGURE_BG)
     ax.figure.patch.set_facecolor(FIGURE_BG)
@@ -173,7 +173,7 @@ def plot_radar_per_thesis(
             ax.plot(angles_arr, scores, "o-", linewidth=1.5, label=model_short, color=model_colors[i % 3])
             ax.fill(angles_arr, scores, alpha=0.15, color=model_colors[i % 3])
         ax.legend(loc="upper right", fontsize=8)
-        ax.set_title(f"Thesis {thesis_id} (cluster {rows[0].get('cluster', '')})", color=PALETTE["charcoal"], pad=20)
+        ax.set_title(f"Thesis {thesis_id} (cluster {rows[0].get('cluster', '')})", color=PALETTE["charcoal"])
         path = out_dir / f"radar_thesis_{thesis_id}.png"
         fig.tight_layout()
         fig.savefig(path, dpi=150, bbox_inches="tight", facecolor=FIGURE_BG)
@@ -199,7 +199,7 @@ def plot_radar_by_model(results: list[dict], out_dir: Path) -> Path:
         ax.plot(angles_arr, mean_scores, "o-", linewidth=2, label=model_short, color=model_colors[i % 3])
         ax.fill(angles_arr, mean_scores, alpha=0.2, color=model_colors[i % 3])
     ax.legend(loc="upper right")
-    ax.set_title("Mean competency profile by model", color=PALETTE["charcoal"], pad=20)
+    ax.set_title("Mean competency profile by model", color=PALETTE["charcoal"])
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     path = out_dir / "radar_by_model.png"
@@ -226,7 +226,7 @@ def plot_radar_by_cluster(results: list[dict], out_dir: Path) -> Path:
         ax.plot(angles_arr, mean_scores, "o-", linewidth=1.5, label=f"Cluster {cluster}", color=colors[i % len(colors)])
         ax.fill(angles_arr, mean_scores, alpha=0.15, color=colors[i % len(colors)])
     ax.legend(loc="upper right", fontsize=8)
-    ax.set_title("Mean competency profile by cluster", color=PALETTE["charcoal"], pad=20)
+    ax.set_title("Mean competency profile by cluster", color=PALETTE["charcoal"])
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     path = out_dir / "radar_by_cluster.png"
