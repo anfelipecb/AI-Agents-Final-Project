@@ -24,6 +24,17 @@ plt.rcParams["font.family"] = "serif"
 plt.rcParams["font.serif"] = ["Times New Roman", "DejaVu Serif", "serif"]
 FIGURE_BG = "#FFFFFF"
 PALETTE = {"charcoal": "#2D3142", "white": "#FFFFFF"}
+
+# Short labels for radar axes (avoid truncation like "self reflexi", "evidence eva")
+RADAR_DIM_LABELS = {
+    "argument_construction": "argument",
+    "evidence_evaluation": "evidence",
+    "methodological_reasoning": "method",
+    "theoretical_integration": "theory",
+    "self_reflexivity": "reflexivity",
+    "receptivity_to_critique": "receptivity",
+}
+
 DIAGNOSTICIAN_MODELS = [
     "Qwen/Qwen2.5-0.5B-Instruct",
     "Qwen/Qwen2.5-1.5B-Instruct",
@@ -125,7 +136,8 @@ def _plot_radar_axes(ax: plt.Axes, dims: list[str]) -> tuple[list[float], list[f
     angles += angles[:1]
     ax.set_theta_zero_location("N")
     ax.set_xticks(angles[:-1])
-    ax.set_xticklabels([d.replace("_", "\n")[:12] for d in dims], size=8)
+    labels = [RADAR_DIM_LABELS.get(d, d.replace("_", " ")[:12]) for d in dims]
+    ax.set_xticklabels(labels, size=9, pad=4)
     ax.set_ylim(0, 5)
     ax.set_facecolor(FIGURE_BG)
     ax.figure.patch.set_facecolor(FIGURE_BG)
@@ -161,7 +173,7 @@ def plot_radar_per_thesis(
             ax.plot(angles_arr, scores, "o-", linewidth=1.5, label=model_short, color=model_colors[i % 3])
             ax.fill(angles_arr, scores, alpha=0.15, color=model_colors[i % 3])
         ax.legend(loc="upper right", fontsize=8)
-        ax.set_title(f"Thesis {thesis_id} (cluster {rows[0].get('cluster', '')})", color=PALETTE["charcoal"])
+        ax.set_title(f"Thesis {thesis_id} (cluster {rows[0].get('cluster', '')})", color=PALETTE["charcoal"], pad=20)
         path = out_dir / f"radar_thesis_{thesis_id}.png"
         fig.tight_layout()
         fig.savefig(path, dpi=150, bbox_inches="tight", facecolor=FIGURE_BG)
@@ -187,7 +199,7 @@ def plot_radar_by_model(results: list[dict], out_dir: Path) -> Path:
         ax.plot(angles_arr, mean_scores, "o-", linewidth=2, label=model_short, color=model_colors[i % 3])
         ax.fill(angles_arr, mean_scores, alpha=0.2, color=model_colors[i % 3])
     ax.legend(loc="upper right")
-    ax.set_title("Mean competency profile by model", color=PALETTE["charcoal"])
+    ax.set_title("Mean competency profile by model", color=PALETTE["charcoal"], pad=20)
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     path = out_dir / "radar_by_model.png"
@@ -214,7 +226,7 @@ def plot_radar_by_cluster(results: list[dict], out_dir: Path) -> Path:
         ax.plot(angles_arr, mean_scores, "o-", linewidth=1.5, label=f"Cluster {cluster}", color=colors[i % len(colors)])
         ax.fill(angles_arr, mean_scores, alpha=0.15, color=colors[i % len(colors)])
     ax.legend(loc="upper right", fontsize=8)
-    ax.set_title("Mean competency profile by cluster", color=PALETTE["charcoal"])
+    ax.set_title("Mean competency profile by cluster", color=PALETTE["charcoal"], pad=20)
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     path = out_dir / "radar_by_cluster.png"

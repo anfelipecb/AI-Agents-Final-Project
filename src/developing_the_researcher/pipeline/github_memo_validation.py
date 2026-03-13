@@ -19,6 +19,7 @@ from ..models.committee import assemble_committee, run_committee_deliberation
 from ..models.development_plan import development_plan
 from ..models.diagnostician import diagnose_competencies
 
+from ..analysis.diagnostician_validation import RADAR_DIM_LABELS
 from .github_validation import (
     build_memo_panel,
     get_authors_with_both_weeks,
@@ -370,7 +371,7 @@ def plot_retrospective_improvement_heatmap(results: dict, out_path: Path | None 
     fig, ax = plt.subplots(figsize=(max(6, len(dims) * 1.2), max(4, len(authors) * 0.4)))
     im = ax.imshow(data, aspect="auto", cmap="YlOrRd", vmin=0, vmax=5)
     ax.set_xticks(range(len(dims)))
-    ax.set_xticklabels([d.replace("_", "\n")[:12] for d in dims], fontsize=8)
+    ax.set_xticklabels([RADAR_DIM_LABELS.get(d, d.replace("_", " ")[:12]) for d in dims], fontsize=8)
     ax.set_yticks(range(len(authors)))
     ax.set_yticklabels(authors, fontsize=9)
     plt.colorbar(im, ax=ax, label="Improvement (1-5)")

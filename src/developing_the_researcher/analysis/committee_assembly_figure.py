@@ -9,6 +9,8 @@ import numpy as np
 from ..config import COMPETENCY_DIMENSIONS, DOCS_VALIDATION_OUTPUTS
 from ..models.diagnostician import diagnose_competencies
 
+from .diagnostician_validation import RADAR_DIM_LABELS
+
 # Same styling as corpus_figures
 plt.rcParams["font.family"] = "serif"
 plt.rcParams["font.serif"] = ["Times New Roman", "DejaVu Serif", "serif"]
@@ -75,7 +77,7 @@ def plot_committee_assembly_demo(
         raise ValueError("No valid theses or profiles to plot")
 
     dims = list(COMPETENCY_DIMENSIONS.keys())
-    dim_labels = [d.replace("_", "\n")[:14] for d in dims]
+    dim_labels = [RADAR_DIM_LABELS.get(d, d.replace("_", " ")) for d in dims]
 
     fig, axes = plt.subplots(n, 2, figsize=(10, 3.5 * n), squeeze=False)
     fig.patch.set_facecolor(FIGURE_BG)
