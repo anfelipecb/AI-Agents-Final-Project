@@ -1,0 +1,415 @@
+{
+  "results": [
+    {
+      "condition": "single_agent",
+      "student_profile": "passive_accepter",
+      "mechanical_reliance": 0.7957713007926941,
+      "trust": 3,
+      "quality": 3,
+      "feedback_specificity": 3,
+      "thesis": "The implementation of land-use enforcement within the United States has played a historical role in the lives of African-Americans --- in everything from slavery to its impact on black religious values. This evolution of land development can be traced back from its indigeneity during the stone age era unto this day.  Over the years, land-use enforcement has been expressed by some as an exploitative way for a regime to gain power toward increasing their own economic and territorial advantages. Fo",
+      "feedback": "Your abstract provides a broad and interesting perspective on the historical and social implications of land-use enforcement on African-American communities. However, it could benefit from more specific examples or data points to support these claims. Additionally, consider refining the structure to ensure clarity; for instance, you might want to separate the discussion of historical context from contemporary issues for better readability.",
+      "revision": "The implementation of land-use enforcement within the United States has played a critical historical role in the lives of African-Americans, from the institution of slavery to its contemporary impacts on black religious values. This evolution of land development can be traced back from its indigeneity during the Stone Age, through the colonial period, and into the era of plantation agriculture and beyond. For example, during the antebellum period, enslaved Africans were often forced to work on plantations that expanded into vast stretches of land, which not only facilitated the extraction of resources but also contributed to the systematic dehumanization and exploitation of African-descended people. \n\nFurthermore, post-emancipation, the enforcement of restrictive land-use policies such as "
+    },
+    {
+      "condition": "single_agent",
+      "student_profile": "methods_weak",
+      "mechanical_reliance": 0.8794642090797424,
+      "trust": 3,
+      "quality": 3,
+      "feedback_specificity": 3,
+      "thesis": "This paper examines Catherine Cortez Masto's appeals to Latino Voters over her three statewide elections in nevada. Cortez Masto made headlines in 2016 when she became the first Latina elected to the United States Senate. Her strategy in the Senate race largely relied on winning wide margins among Latino voters. To accomplish this, she spoke heavily about her heritage, campaigned with Latino organizations, made immigration her signature issue, and used Spanish-language appeals. This contrasted h",
+      "feedback": "Your abstract effectively outlines the scope of your research and highlights key aspects of Catherine Cortez Masto's campaign strategies. However, consider adding a sentence that briefly mentions the main findings or conclusions you draw from your analysis, such as how these strategies impacted her electoral success. Additionally, it might be beneficial to include a reference to any limitations or future research directions, which can add depth to your abstract.",
+      "revision": "Revised Thesis:\n\nThis paper examines Catherine Cortez Masto's appeals to Latino voters across her three statewide elections in Nevada, focusing on how her campaign strategies influenced her electoral success. Cortez Masto made headlines in 2016 when she became the first Latina elected to the United States Senate, and her strategy in subsequent Senate races heavily relied on securing significant support among Latino communities. The analysis reveals that her targeted outreach and messaging were crucial in maintaining and expanding her voter base, contributing significantly to her electoral victories. By adopting a nuanced approach to addressing the needs and concerns of Latino voters, Cortez Masto was able to achieve substantial wins, highlighting the importance of strategic voter engagemen"
+    },
+    {
+      "condition": "random_committee",
+      "student_profile": "descriptive_reporter",
+      "mechanical_reliance": 0.8937870264053345,
+      "trust": 3,
+      "quality": 3,
+      "feedback_specificity": 3,
+      "thesis": "Shades of New York in Algren\u2019s Chicago. Many critics and readers regard Nelson Algren\u2019s Chicago: City on the Make as \u201cthe best book about Chicago.\u201d Fifty years after its initial publication, the essay continues to win praise for capturing the essence of the city. This thesis examines the symbolic and structural elements within the text that have produced those impressions in readers. It refutes the usual explanations\u2014that Algren captures an essential Chicago that exists outside of time, or that ",
+      "feedback": "Your thesis, \"Shades of New York in Algren\u2019s Chicago,\" effectively sets the stage for examining Nelson Algren's portrayal of Chicago through symbolic and structural elements. To strengthen your argument, consider narrowing the scope to a specific comparison, such as New York, and clearly articulate the intended focus on particular symbols or structures. Additionally, integrate comparative literary analysis and deeper engagement with literary theory, such as semiotics or post-structuralism, to enrich your analysis. Finally, ensure that your thesis addresses the historical and cultural context to provide a comprehensive framework for your argument.",
+      "revision": "Certainly. Here is a revised version of your thesis that addresses the feedback by narrowing the scope and clarifying the focus:\n\n**Revised Thesis:**\n\nNelson Algren's *Chicago: City on the Make* employs a rich tapestry of symbolic elements to capture the urban experience, drawing significant parallels with the vibrant and complex world of New York City. Through an analysis of specific literary devices and thematic motifs, this thesis explores how Algren\u2019s portrayal of Chicago mirrors the diverse and often harsh realities of life in New York, thereby enriching our understanding of both cities. By examining the interplay between these two iconic urban centers, this study highlights the universal themes of resilience, struggle, and the human condition that transcend geographical boundaries.\n\n",
+      "competency_profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The argument is logically coherent and presents a clear claim about Algren's textual construction of Chicago. The author aligns well between the claim and the evidence provided."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "The evidence evaluation appears to distinguish between different types of references, but it does not fully explore the nuances of correlation and causation or the quality of sources in depth."
+        },
+        "methodological_reasoning": {
+          "score": 2,
+          "justification": "The methodological reasoning is limited as the thesis does not deeply justify the design choices or discuss potential validity threats. The scope of the study is also not clearly defined."
+        },
+        "theoretical_integration": {
+          "score": 4,
+          "justification": "The thesis effectively connects the findings to existing literary frameworks, particularly by referencing Sandburg\u2019s work. However, it could further integrate more contemporary theories."
+        },
+        "self_reflexivity": {
+          "score": 3,
+          "justification": "There is some awareness of the author's position and assumptions, such as the idea that Algren constructs a textual city rather than a real one. However, more explicit discussion of the author's own biases and limitations would enhance this aspect."
+        },
+        "receptivity_to_critique": {
+          "score": 2,
+          "justification": "The thesis does not demonstrate a strong engagement with potential counterarguments or critiques. It refutes common explanations without presenting a robust alternative framework for consideration."
+        }
+      },
+      "committee": [
+        "Methodologist",
+        "Clarity Coach",
+        "Theorist"
+      ],
+      "deliberation_log": "[Methodologist]: ### Feedback\n\n**Strengths:**\n1. **Clear Thesis Statement**: The statement is clear and focused on examining the symbolic and structural elements of Nelson Algren\u2019s \"Chicago: City on the Make.\"\n2. **Critical Engagement**: The thesis challenges conventional interpretations, which is a valuable approach in literary analysis.\n3. **Purposeful Refutation**: The intention to refute common explanations is well-articulated and sets up a compelling argument.\n\n**Areas for Improvement:**\n1. **Scope and Specificity**:\n   - **Specificity**: While the thesis is broad, it could benefit from more specificity about what you intend to argue about the symbolic and structural elements. For example, you could specify which particular symbols or structures you will focus on.\n   - **Scope**: The phrase \"produced those impressions in readers\" is vague. Clarify exactly how these elements influence reader perceptions.\n\n2. **Validity Threats**:\n   - **Historical Context**: Ensure that your analysis accounts for the\n\n[Clarity Coach]: Your thesis is clear and focused, but it could benefit from a few adjustments to enhance its logical coherence and clarity. Here's a revised version with some feedback:\n\n**Revised Thesis:**\nShades of New York in Algren\u2019s Chicago: This thesis explores how Nelson Algren\u2019s \"Chicago: City on the Make\" resonates with the literary traditions and themes of New York, challenging the notion that it captures an essential or historically accurate representation of Chicago. Instead, it argues that Algren\u2019s portrayal reflects broader American urban experiences, thereby questioning the usual explanations of his work as mystical or historically specific.\n\n### Feedback:\n1. **Clarity of Scope:** The original thesis is somewhat broad. Narrowing the focus to a specific comparison (New York) and a particular aspect of Algren\u2019s work (urban experience) makes the argument more manageable and clearer.\n2. **Logical Coherence:** The revised thesis aligns more logically with the intended argument by explicitly stating what you will argue against (m\n\n[Theorist]: Your thesis, \"Shades of New York in Algren\u2019s Chicago,\" sets a strong foundation by examining Nelson Algren's portrayal of Chicago through the lens of symbolic and structural elements. Here are some constructive feedback points to enhance your work:\n\n1. **Integration of Comparative Frameworks**: Consider integrating comparative literary analysis with other works, especially those that focus on urban settings like New York in literature (e.g., Jack London\u2019s \"The People of the Abyss,\" Edith Wharton\u2019s \"The House of Mirth\"). This can provide a richer context for understanding Algren's unique approach to Chicago.\n\n2. **Theoretical Engagement**: Engage more deeply with literary theory. For instance, you could draw from semiotics to analyze how symbols and structures function within the text. Additionally, you might consider post-structuralist or deconstructive theories to explore how meaning is constructed and deconstructed in Algren\u2019s narrative.\n\n3. **Historical and Cultural Context**: Incorporate a broader historical and cultural",
+      "development_plan": {
+        "gap_map": [
+          {
+            "dimension": "methodological_reasoning",
+            "current": "limited",
+            "target": "detailed justification of design choices and discussion of potential validity threats",
+            "priority": "high"
+          },
+          {
+            "dimension": "evidence_evaluation",
+            "current": "basic",
+            "target": "in-depth exploration of correlation, causation, and source quality",
+            "priority": "medium"
+          },
+          {
+            "dimension": "self_reflexivity",
+            "current": "moderate",
+            "target": "explicit discussion of personal biases and limitations",
+            "priority": "medium"
+          },
+          {
+            "dimension": "receptivity_to_critique",
+            "current": "low",
+            "target": "engagement with potential counterarguments and alternative frameworks",
+            "priority": "high"
+          }
+        ],
+        "exercises": [
+          {
+            "title": "Validity Threat Analysis",
+            "description": "Identify and analyze potential validity threats in your research methodology, including historical context, authorial intent, and reader perception. Document these threats and explain how they might affect your conclusions.",
+            "dimension": "methodological_reasoning"
+          },
+          {
+            "title": "Critical Source Evaluation",
+            "description": "Select a set of sources used in your thesis and critically evaluate their quality, relevance, and potential biases. Provide a detailed report on each source\u2019s contribution to your argument.",
+            "dimension": "evidence_evaluation"
+          },
+          {
+            "title": "Bias Reflection",
+            "description": "Write a reflective essay on your personal biases and assumptions throughout the writing process. Discuss how these might have influenced your interpretation and conclusions, and propose ways to mitigate them.",
+            "dimension": "self_reflexivity"
+          },
+          {
+            "title": "Counterargument Integration",
+            "description": "Identify and critically assess at least three potential counterarguments to your thesis. Develop a response to each counterargument and integrate these into your final draft to demonstrate receptivity to critique.",
+            "dimension": "receptivity_to_critique"
+          }
+        ],
+        "trajectory": "Focus on deepening methodological rigor through a detailed analysis of validity threats, enhancing evidence evaluation by exploring source quality and biases, strengthening self-reflexivity by explicitly addressing personal influences, and demonstrating receptivity to critique by integrating counterarguments."
+      },
+      "plan_quality": {
+        "specificity": 3,
+        "actionability": 4,
+        "developmental_framing": 4
+      },
+      "deliberation_metrics": {
+        "perspective_shifts": 1,
+        "challenges": 2,
+        "reconciliations": 0
+      }
+    },
+    {
+      "condition": "random_committee",
+      "student_profile": "passive_accepter",
+      "mechanical_reliance": 0.8795471787452698,
+      "trust": 3,
+      "quality": 3,
+      "feedback_specificity": 3,
+      "thesis": "Since 2010, there has been a rapid proliferation of political advocacy videogames tackling serious subject matter, particularly issues surrounding class, gender, and disability.  Some, eager to champion such games as signs of the medium\u2019s maturation, have been quick to declare such \u201cempathy games\u201d  as exemplars of what they laud as one of gaming\u2019s medium specific virtues: its supposed ability to \u201cput players in another's shoes.\u201d   Others, particularly critics within Queer Game Studies, have been",
+      "feedback": "Your thesis effectively highlights the trend of political advocacy video games since 2010 and the debates around their ability to foster empathy. To enhance clarity and coherence, refine your thesis statement to specify the time frame and the specific social issues addressed, such as \"Since 2010, there has been a rapid proliferation of political advocacy video games tackling issues like class, gender, and disability.\" Ensure a smooth transition between discussing the positive views and the critiques, perhaps by using a phrase like \"While some scholars celebrate these games as evidence of the medium's evolving capacity to foster empathy, others, particularly within Queer Game Studies, argue that such representations may not always succeed in their intended purpose.\" Additionally, integrate ",
+      "revision": "Since 2010, there has been a rapid proliferation of political advocacy video games tackling serious subject matter, particularly issues surrounding class, gender, and disability. These games have sparked debate about whether they can effectively foster empathy. Some, eager to champion such games as signs of the medium's maturation, have been quick to declare them \"empathy games,\" though the efficacy of these games in promoting genuine empathy remains a topic of discussion.",
+      "competency_profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The argument is coherent and aligns well with the evidence provided. The author presents a clear stance against both sides and introduces a new perspective."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "The evidence is relevant but does not extensively distinguish between correlation and causation or evaluate conflicting evidence."
+        },
+        "methodological_reasoning": {
+          "score": 2,
+          "justification": "The methodology is not thoroughly explained or justified. There is no indication of how the author identified or mitigated potential validity threats."
+        },
+        "theoretical_integration": {
+          "score": 3,
+          "justification": "The author connects the findings to existing theories but does so in a cursory manner without deep integration or discussion."
+        },
+        "self_reflexivity": {
+          "score": 4,
+          "justification": "The author shows awareness of the need to consider the informatic context of empathy games, indicating a level of self-reflexivity about the role of the medium and the critic."
+        },
+        "receptivity_to_critique": {
+          "score": 4,
+          "justification": "The author engages with different critical perspectives and acknowledges the limitations of both sides, demonstrating openness to critique."
+        }
+      },
+      "committee": [
+        "Clarity Coach",
+        "Theorist",
+        "Encourager"
+      ],
+      "deliberation_log": "[Clarity Coach]: Your thesis is clear and concise, effectively capturing the dual perspectives on political advocacy video games that tackle serious social issues. Here are some brief feedback points to enhance its clarity and coherence:\n\n1. **Clarity and Precision**: The thesis statement could be slightly refined for clarity. Consider specifying the time frame more explicitly: \"Since 2010, there has been a rapid proliferation of political advocacy video games tackling serious subject matter, particularly issues surrounding class, gender, and disability.\"\n\n2. **Logical Flow**: Ensure the transition from the introduction to the critical perspectives is smooth. You might consider adding a transitional phrase to link the two main ideas:\n   - \"While some advocate for these games as markers of the medium's maturity, others, especially within Queer Game Studies, have critiqued their methods of evoking empathy.\"\n\n3. **Sentence Structure**: The sentence beginning with \"Others, particularly critics within Queer Game Studies\" can be rephrased for better readability:\n   - \"\n\n[Theorist]: Your thesis effectively highlights a significant trend in the video game industry and introduces a nuanced discussion about the representation of empathy in games. Here are some constructive suggestions for enhancing your work:\n\n### 1. **Clarify and Expand Your Thesis Statement**\nYour current statement is good but could be more precise. Consider refining it to clearly articulate the main argument or question you are exploring:\n**Revised Thesis:** Since 2010, political advocacy video games have proliferated, often focusing on social issues like class, gender, and disability. While some scholars and advocates celebrate these games as evidence of the medium's evolving capacity to foster empathy, critics within Queer Game Studies and other fields argue that such representations may not always succeed in their intended purpose.\n\n### 2. **Connect to Existing Theoretical Frameworks**\nIntegrate existing theories from media studies, game studies, and critical theory to provide a richer context. For example, you might discuss:\n- **Empathy and Narrative Theory**: How narrative structures\n\n[Encourager]: Your thesis effectively highlights a significant trend in the gaming industry and touches on the complex debate surrounding the use of games to promote empathy. Here are some points for further consideration:\n\n### Assumptions:\n1. **Assumption of Maturation**: The assumption that these games are evidence of the medium's maturation is worth exploring more deeply. Consider whether this is a widely accepted view or if it varies by audience.\n2. **Assumption of Empathy Games**: The term \"empathy games\" is somewhat ambiguous. Clarify what you mean by \"empathy games\" and how they differ from other games that address similar themes.\n\n### Positionality:\n- **Positioning as a Critic**: You seem to be positioning yourself as a critic of both sides. This is valid, but ensure you provide a balanced perspective. Acknowledge the strengths and weaknesses of both arguments.\n- **Positioning of Audience**: Consider who your audience is and how their positionality might influence their interpretation of your thesis",
+      "development_plan": {
+        "gap_map": [
+          {
+            "dimension": "methodological_reasoning",
+            "current": "not thoroughly explained or justified",
+            "target": "thoroughly explain and justify methodologies",
+            "priority": "high"
+          },
+          {
+            "dimension": "theoretical_integration",
+            "current": "cursory manner without deep integration",
+            "target": "deep integration of findings with existing theories",
+            "priority": "medium"
+          }
+        ],
+        "exercises": [
+          {
+            "title": "Methodology Workshop",
+            "description": "Participate in a workshop focused on understanding and articulating research methodologies, including identifying and mitigating potential validity threats.",
+            "dimension": "methodological_reasoning"
+          },
+          {
+            "title": "Literature Review Integration",
+            "description": "Conduct a detailed literature review to deepen the connection between your findings and existing theories in game studies and related fields.",
+            "dimension": "theoretical_integration"
+          }
+        ],
+        "trajectory": "To improve the overall quality of the thesis, the focus should first be on enhancing the explanation and justification of methodologies, followed by integrating the findings more deeply with existing theories. This will strengthen the coherence and persuasiveness of the arguments presented."
+      },
+      "plan_quality": {
+        "specificity": 3,
+        "actionability": 4,
+        "developmental_framing": 4
+      },
+      "deliberation_metrics": {
+        "perspective_shifts": 2,
+        "challenges": 3,
+        "reconciliations": 1
+      }
+    },
+    {
+      "condition": "prescribed_committee",
+      "student_profile": "methods_weak",
+      "mechanical_reliance": 0.9131545424461365,
+      "trust": 3,
+      "quality": 3,
+      "feedback_specificity": 3,
+      "thesis": "This paper examines speeches, articles, interviews and tweets from four New York City Latinx public figures: attorney Elizabeth Yeampierre, journalist Yessenia Funes, congresswoman Alexandria Ocasio-Cortez, and playwright Lin-Manuel Miranda, in order to understand how these Latinx climate leaders approach climate change in parallel and contrasting ways from mainstream climate activists. This study found that the climate action of these four leaders is fueled by local, contemporary impacts of cli",
+      "feedback": "Your thesis effectively outlines the scope of your study but could be strengthened by providing clearer definitions and more specific examples. Define the terms \"mainstream climate activists\" and \"Latinx leaders\" to ensure the context of the contrast is clear. Additionally, include more detailed evidence to support claims about the leaders' actions being influenced by local, contemporary impacts of climate change. Balance your analysis by highlighting both similarities and differences between the groups. Finally, ensure the structure of your argument is cohesive and logically flows throughout the paper. In terms of methodology, clarify the objectives of your study and provide a representative selection of leaders to avoid bias. Also, incorporate theoretical frameworks such as Critical Race",
+      "revision": "Revised Thesis:\n\nThis paper examines speeches, articles, interviews, and tweets from four prominent New York City Latinx public figures\u2014attorney Elizabeth Yeampierre, journalist Yessenia Funes, congresswoman Alexandria Ocasio-Cortez, and playwright Lin-Manuel Miranda\u2014to understand how these individuals, who are defined as key Latinx leaders within the climate justice movement, engage with and contribute to mainstream climate activism. By analyzing their public statements and actions, this study aims to elucidate the distinct approaches and strategies employed by Latinx leaders in the climate movement, contrasting them with those of other mainstream climate activists. Specific examples will include their advocacy for policies such as the Green New Deal, their involvement in grassroots organ",
+      "competency_profile": {
+        "argument_construction": {
+          "score": 3,
+          "justification": "The argument is coherent but could benefit from more explicit claim-evidence alignment. The comparison between the leaders' approaches and mainstream actions is clear but could be more logically connected."
+        },
+        "evidence_evaluation": {
+          "score": 2,
+          "justification": "The evidence evaluation is basic; it does not distinguish between correlation and causation or consider the quality of sources. It also does not address any conflicting evidence."
+        },
+        "methodological_reasoning": {
+          "score": 3,
+          "justification": "The methodology is described but lacks a deeper discussion on design choices and potential validity threats. The scope of the study could be more clearly defined."
+        },
+        "theoretical_integration": {
+          "score": 2,
+          "justification": "While the thesis connects findings to existing literature, the integration is superficial and does not fully engage with theoretical frameworks. There is room for deeper theoretical engagement."
+        },
+        "self_reflexivity": {
+          "score": 2,
+          "justification": "The author shows some awareness of their positionality but does not explicitly discuss any personal biases or assumptions. Limitations of the study are not thoroughly addressed."
+        },
+        "receptivity_to_critique": {
+          "score": 1,
+          "justification": "The thesis does not engage substantively with critiques or alternative viewpoints. It avoids addressing potential counterarguments or weaknesses in the research."
+        }
+      },
+      "committee": [
+        "Devil's Advocate",
+        "Methodologist",
+        "Theorist"
+      ],
+      "deliberation_log": "[Devil's Advocate]: Your thesis provides a clear and focused scope for your research, highlighting the distinction between the local and contemporary impacts of climate change as experienced by Latinx public figures versus mainstream climate activism. However, there are several areas where you might want to strengthen your argument and provide more depth:\n\n1. **Clarify \"Mainstream Climate Activism\"**: Define what you mean by \"mainstream climate activism.\" Is it limited to certain organizations, movements, or geographical regions? Clarifying this will help readers understand the contrast you are drawing.\n\n2. **Provide Evidence for Differences**: Ensure that you have sufficient evidence to support your claim about the difference in focus between Latinx leaders and mainstream activists. For example, you could include specific quotes or data points from the sources you analyzed.\n\n3. **Contextualize the Findings**: Explain why the focus on local, contemporary impacts is significant. What does this reveal about the strategies and approaches of Latinx leaders compared to mainstream activists?\n\n4. **Potential Limitations**:\n\n[Methodologist]: ### Feedback\n\n#### Strengths:\n1. **Clear Research Question**: The thesis clearly articulates the research question and the purpose of the study.\n2. **Rich Data Sources**: The use of speeches, articles, interviews, and tweets as data sources provides a comprehensive understanding of the subject matter.\n3. **Comparative Analysis**: The comparative approach between the four Latinx public figures offers a nuanced analysis.\n\n#### Areas for Improvement:\n\n1. **Scope and Scope Conditions**:\n   - **Clarify Scope**: Explicitly state the time frame for the data collection (e.g., 2018-2023) and the specific events or periods you are focusing on.\n   - **Define \u201cMainstream Climate Activists\u201d**: Clearly define who and what constitutes \u201cmainstream climate activists\u201d to ensure comparability.\n\n2. **Validity Threats**:\n   - **Contextual Bias**: Ensure that the context of each leader\u2019s background and local issues is well-documented to avoid\n\n[Theorist]: Your thesis provides a clear and focused scope, examining the climate activism of four prominent Latinx figures in New York City through various forms of media. To enhance the theoretical depth and connection to broader frameworks, consider the following suggestions:\n\n1. **Theoretical Frameworks**:\n   - **Critical Race Theory (CRT)**: Incorporate CRT to explore how race and identity intersect with climate change activism. This framework can help elucidate how the experiences and actions of these Latinx leaders are shaped by systemic racism.\n   - **Environmental Justice**: Use environmental justice as a lens to examine how these leaders address not only climate change but also issues of inequality and marginalization within their communities.\n\n2. **Comparative Analysis**:\n   - **Mainstream Climate Activism**: Explicitly compare and contrast the approaches of your selected leaders with those of mainstream climate activists. Highlight any similarities or differences in their strategies and goals.\n   - **Intersectionality**: Discuss how the intersection of gender, ethnicity, and class influences the",
+      "development_plan": {
+        "gap_map": [
+          {
+            "dimension": "argument_construction",
+            "current": "coherent but could benefit from more explicit claim-evidence alignment",
+            "target": "a more cohesive and logically connected argument",
+            "priority": "high"
+          },
+          {
+            "dimension": "evidence_evaluation",
+            "current": "basic; does not distinguish between correlation and causation or consider the quality of sources",
+            "target": "an evaluation that distinguishes between correlation and causation and considers the quality of sources",
+            "priority": "high"
+          },
+          {
+            "dimension": "theoretical_integration",
+            "current": "superficial and does not fully engage with theoretical frameworks",
+            "target": "a deeper theoretical engagement with relevant frameworks",
+            "priority": "medium"
+          },
+          {
+            "dimension": "self_reflexivity",
+            "current": "does not explicitly discuss personal biases or limitations",
+            "target": "a thorough discussion of personal biases and limitations",
+            "priority": "medium"
+          }
+        ],
+        "exercises": [
+          {
+            "title": "Argument Mapping",
+            "description": "Create an argument map to outline the logical flow of your argument, ensuring each claim is clearly linked to its supporting evidence and that the overall argument is cohesive.",
+            "dimension": "argument_construction"
+          },
+          {
+            "title": "Critical Race Theory and Environmental Justice Literature Review",
+            "description": "Read key texts on Critical Race Theory and Environmental Justice to understand how they can be applied to your topic and then incorporate these theories into your analysis.",
+            "dimension": "theoretical_integration"
+          },
+          {
+            "title": "Bias and Limitations Workshop",
+            "description": "Participate in a workshop focused on identifying and addressing potential biases and limitations in your research, including self-reflection on personal biases.",
+            "dimension": "self_reflexivity"
+          }
+        ],
+        "trajectory": "The development trajectory should focus on strengthening the argument construction and evidence evaluation while gradually integrating more theoretical perspectives and enhancing self-reflexivity. This will create a more robust and nuanced analysis."
+      },
+      "plan_quality": {
+        "specificity": 3,
+        "actionability": 4,
+        "developmental_framing": 5
+      },
+      "deliberation_metrics": {
+        "perspective_shifts": 2,
+        "challenges": 2,
+        "reconciliations": 0
+      }
+    },
+    {
+      "condition": "prescribed_committee",
+      "student_profile": "descriptive_reporter",
+      "mechanical_reliance": 0.683716356754303,
+      "trust": 3,
+      "quality": 3,
+      "feedback_specificity": 3,
+      "thesis": "The American middle-skilled labor market, which consists of jobs that require some postsecondary training but not a Bachelor\u2019s degree, presents various opportunities for Americans to obtain good-paying, socially important occupations without the heavy burden of student debt. However, American employers are facing a challenge: finding employees with the qualifications to fill middle-skilled positions. Projections suggest that the employment gap will only be exacerbated over the course of the next",
+      "feedback": "The thesis effectively addresses the issue of the American middle-skilled labor market but requires several clarifications and enhancements. Define \"middle-skilled\" and specify examples of good-paying, socially important occupations to improve clarity. Additionally, address potential validity threats such as employer perceptions and economic factors that may influence the employment gap. Geographically, the analysis should account for regional variations in job availability and include the role of educational backgrounds. The thesis should also provide a clearer definition of \"good-paying\" and specify industries or sectors involved. Further, the concept of the employment gap and its economic impacts need to be elaborated with supporting examples or data. Incorporating theories such as huma",
+      "revision": "Certainly! Here is a revised version of your thesis, addressing the feedback provided:\n\n---\n\nThe American middle-skilled labor market, which consists of jobs requiring some postsecondary training but not a Bachelor's degree, offers a pathway for Americans to secure well-compensated and socially valuable occupations without incurring significant student debt. This market encompasses roles such as healthcare technicians, skilled tradespeople (e.g., electricians, plumbers), and technical specialists (e.g., IT support professionals). Despite these opportunities, American employers and individuals may still face challenges related to perceptions of the value of middle-skilled positions and broader economic factors that can influence employment trends.\n\nIn constructing this argument, it is essen",
+      "competency_profile": {
+        "argument_construction": {
+          "score": 3,
+          "justification": "The argument introduces a clear thesis about the challenges faced by the American middle-skilled labor market and the Hispanic/Latinx immigrant community. However, it lacks detailed logical connections and warrants to support the claims made."
+        },
+        "evidence_evaluation": {
+          "score": 2,
+          "justification": "The thesis mentions projections and potential economic impacts but does not provide specific evidence or sources to evaluate the correlation or causation of these factors. There is no indication of how the author evaluates the quality of the sources used."
+        },
+        "methodological_reasoning": {
+          "score": 1,
+          "justification": "The excerpt does not provide any details on the methods used to gather data or the design choices that were made. Therefore, there is no indication of the reasoning behind the study's methodology or identification of potential validity threats."
+        },
+        "theoretical_integration": {
+          "score": 2,
+          "justification": "The thesis touches on the importance of middle-skilled positions and the challenges faced by the Hispanic/Latinx immigrant community but does not connect these ideas to existing theories or frameworks in the field of labor economics or sociology."
+        },
+        "self_reflexivity": {
+          "score": 2,
+          "justification": "There is no explicit mention of the author's positionality or any awareness of their own biases or assumptions. The thesis does not address potential limitations or alternative explanations for the observed trends."
+        },
+        "receptivity_to_critique": {
+          "score": 1,
+          "justification": "The provided excerpt does not show any engagement with potential critiques or alternative viewpoints. It does not present how the author would respond to counterarguments or how they have considered other perspectives in their research."
+        }
+      },
+      "committee": [
+        "Methodologist",
+        "Devil's Advocate",
+        "Theorist"
+      ],
+      "deliberation_log": "[Methodologist]: ### Feedback\n\n**Strengths:**\n1. **Clear Topic Identification**: The thesis clearly identifies the topic of middle-skilled labor markets in America and the potential benefits.\n2. **Relevant Context**: It provides context about the importance of these jobs and the current challenges faced by employers.\n\n**Areas for Improvement:**\n\n1. **Completeness of Argument**:\n   - The thesis is incomplete as it ends abruptly. Consider elaborating on how the employment gap will impact the economy and what measures can be taken to address it.\n   - Example: \"Projections suggest that the employment gap will only be exacerbated over the next 15 years, leading to slowed economic growth and increased unemployment among those who lack access to middle-skilled jobs. To mitigate this, there is a need for increased investment in vocational training programs and partnerships between educational institutions and employers.\"\n\n2. **Validity Threats**:\n   - Address potential threats to validity such as selection bias or confounding variables. For example, consider\n\n[Devil's Advocate]: Your thesis is well-articulated and highlights an important issue in the U.S. labor market. However, there are a few areas where additional detail or clarification could strengthen your argument:\n\n1. **Clarify \"Good-Paying\" and \"Socially Important\":** Define what constitutes \"good-paying\" and \"socially important\" occupations to ensure clarity for your audience. This will help in better supporting your claim about the value of these middle-skilled jobs.\n\n2. **Address Student Debt:** While you mention the reduction of student debt as an advantage, you should also consider how the current education system might contribute to the problem. Discuss how the high cost of higher education influences students' decisions and the types of careers they pursue.\n\n3. **Economic Impact:** Elaborate on how the employment gap specifically impacts the economy. You mentioned that it slows economic growth, but provide more concrete examples or data to support this assertion.\n\n4. **Future Projections:** The use of \"business-as\n\n[Theorist]: Your thesis effectively highlights an important issue in the American labor market, focusing on the middle-skilled workforce. Here are some ways to strengthen your work by connecting it to broader frameworks and concepts:\n\n1. **Social Mobility Framework**: You can integrate social mobility theories to discuss how access to middle-skilled jobs can contribute to upward mobility. This would help highlight the importance of such jobs in bridging economic gaps.\n\n2. **Economic Development Models**: Incorporate elements from economic development models, particularly those that emphasize human capital investment and its impact on productivity and economic growth. This would provide a more comprehensive understanding of why middle-skilled positions are crucial for economic development.\n\n3. **Educational Policy Analysis**: Connect your thesis to educational policy analysis, discussing how current policies (or lack thereof) affect the availability and quality of middle-skilled training programs. This could include a discussion on vocational education, apprenticeships, and community college programs.\n\n4. **Labor Market Dynamics**: Use labor market dynamics theories to explain",
+      "development_plan": {
+        "gap_map": [
+          {
+            "dimension": "Argument Construction",
+            "current": "Introduces a clear thesis but lacks detailed logical connections and supports.",
+            "target": "Develops a coherent and well-supported argument with detailed logical connections.",
+            "priority": "High"
+          },
+          {
+            "dimension": "Methodological Reasoning",
+            "current": "No details on data gathering methods or design choices.",
+            "target": "Includes a detailed explanation of methods used and rationale behind them.",
+            "priority": "High"
+          },
+          {
+            "dimension": "Theoretical Integration",
+            "current": "Touch on the importance of middle-skilled positions and challenges without connecting to existing theories.",
+            "target": "Integrates relevant theories such as human capital and skill mismatch to enhance the argument.",
+            "priority": "Medium"
+          },
+          {
+            "dimension": "Receptivity to Critique",
+            "current": "No engagement with potential critiques or alternative viewpoints.",
+            "target": "Addresses potential counterarguments and alternative viewpoints in the discussion.",
+            "priority": "Medium"
+          }
+        ],
+        "exercises": [
+          {
+            "title": "Develop Logical Connections",
+            "description": "Practice constructing arguments by using specific examples and data to support each claim. Create an outline where you clearly connect each part of your argument to the overall thesis.",
+            "dimension": "Argument Construction"
+          },
+          {
+            "title": "Research and Explain Methodology",
+            "description": "Identify and explain the methods used in your research, including data collection and analysis techniques. Consider potential validity threats and how they might affect your results.",
+            "dimension": "Methodological Reasoning"
+          },
+          {
+            "title": "Integrate Theories and Frameworks",
+            "description": "Study key theories related to labor economics and sociology, and find ways to apply them to your research question. For example, explore the concept of human capital and skill mismatch, and discuss how these theories relate to the challenges faced by the Hispanic/Latinx immigrant community in the middle-skilled labor market.",
+            "dimension": "Theoretical Integration"
+          },
+          {
+            "title": "Engage with Counterarguments",
+            "description": "Identify common counterarguments to your thesis and prepare responses. This could involve researching opposing viewpoints and developing a structured rebuttal to each point.",
+            "dimension": "Receptivity to Critique"
+          }
+        ],
+        "trajectory": "To develop the thesis further, focus on enhancing the argument construction by providing detailed logical connections and supporting evidence. Strengthen methodological reasoning by clearly explaining the research methods and addressing potential validity threats. Integrate relevant theories to provide a more robust framework, and engage with potential critiques to demonstrate a balanced and thorough analysis."
+      },
+      "plan_quality": {
+        "specificity": 3,
+        "actionability": 4,
+        "developmental_framing": 4
+      },
+      "deliberation_metrics": {
+        "perspective_shifts": 4,
+        "challenges": 1,
+        "reconciliations": 0
+      }
+    }
+  ]
+}

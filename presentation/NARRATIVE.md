@@ -1,108 +1,78 @@
-# Presentation Narrative and Figure Mappings
+# Presentation Narrative (20 slides, 5 min)
 
-Slide-by-slide narrative and figure references for the 5-minute presentation (23 slides).
-
-**Speaking script:** See [SCRIPT.md](SCRIPT.md) for a TED-talk style lighting script aligned to all slides.
+**Figures:** `docs/validation_outputs/` | **Script:** [SCRIPT.md](SCRIPT.md)
 
 ---
 
-## Figure Reference (docs/validation_outputs/)
+## Figure → Slide Mapping
 
-| Figure | Use |
-|--------|-----|
-| radar_by_model.png | Diagnostician: 0.5B vs 1.5B vs 7B mean profile |
-| radar_by_cluster.png | Diagnostician: profiles by thesis cluster |
-| radar_thesis_*.png | Diagnostician: per-thesis overlay (pick 1–2) |
-| committee_assembly_demo.png | Committee: profile → committee mapping |
-| feedback_comparison_thesis_*.png | C1 vs C3 side-by-side |
-| deliberation_thesis_*.png | Committee deliberation excerpt |
-| deliberation_thesis_*.txt | Raw deliberation text for quotes |
-| development_plan_example.png | Gap map, exercises, trajectory |
-| plan_quality_by_condition.png | Pilot: plan quality by condition |
-| feedback_specificity_by_condition.png | Pilot: feedback specificity |
-| github_improvement_heatmap.png | GitHub: author × dimension improvement |
-| github_memo_validation.png | GitHub: overall validation summary |
+| Slide | Figure | Use |
+|-------|--------|-----|
+| 4 | committee_assembly_demo.png | Research design: diagnosis → committee assignment |
+| 6 | radar_by_model.png, radar_by_cluster.png, radar_thesis_13058.png | 0.5B/1.5B/7B; profiles by cluster |
+| 7 | committee_assembly_demo.png | Profile → committee mapping |
+| 9 | development_plan_example.png | Gap map, exercises, trajectory |
+| 12 | plan_quality_by_condition.png, feedback_specificity_by_condition.png | Pilot: prescribed > random > single |
+| 14 | feedback_comparison_thesis_13058.png, deliberation_thesis_13058.png | C1 vs C3 side-by-side |
+| 15 | github_improvement_heatmap.png, github_memo_validation.png | Mean improvement by dim: method 4.15, scope 2.0; per-author variation |
+| 17 | github_memo_activity.png, github_course_improvement_heatmap.png, github_competency_evolution.png | Memos/week; week × dimension; reflexivity weakest |
 
 ---
 
-## Slides 1–4: Problem and Question
+## Slides 1–4: Problem, Question, Design
 
-**1. Title** — It's the Student, Not the Thesis: Personalized Adversarial Committees for Competency Development
+**1. Title** — Core claim.
 
-**2. Problem** — We want to develop the researcher, not just polish the thesis; reduce mechanical AI use.
-- *Talking point:* Generic AI feedback can reinforce surface-level editing instead of substantive competency growth.
+**2. Problem** — Develop the researcher, not polish the thesis; reduce mechanical AI use.
 
 **3. Problem (cont.)** — Generic feedback may not target a student's weakest dimensions.
-- *Talking point:* A thesis weak on methodology may get feedback spread evenly across dimensions, missing the main gap.
 
-**4. Research question** — Do personalized committees (matched to diagnosis) improve development plans and engagement?
-- *Talking point:* We compare three conditions to test whether targeted committee feedback outperforms generic or random advice.
+**4. Research question + design** — Do personalized committees (matched to diagnosis) improve plans and engagement? *Show:* committee_assembly_demo.png — diagnosis (6-dim scores) → committee assignment; different profiles → different committees.
 
 ---
 
-## Slides 5–11: Design and Method
+## Slides 5–11: Design & Method
 
-**5. Design: three conditions** — Single agent / Random committee / Prescribed committee.
-- *Talking point:* C1 = baseline; C2 = committee but no diagnosis; C3 = diagnosis drives committee assembly.
+**5. Conditions** — C1 single, C2 random, C3 prescribed.
 
-**6. Design: diagnostician** — Six dimensions (argument, evidence, methodology, theory, self-reflexivity, receptivity); scores 1–5 + justifications.
-- **Figure:** `radar_by_model.png` — "We compared 0.5B, 1.5B, and 7B Qwen models; larger models produce more differentiated profiles."
-- **Figure:** `radar_by_cluster.png` — "Profiles vary by thesis type (embedding cluster)."
-- **Figure:** `radar_thesis_13058.png` (example) — Per-thesis overlay across models.
+**6. Diagnostician** — Six dimensions, 1–5. Qwen 0.5B/1.5B/7B; profiles by cluster. *Show:* radar_by_model, radar_by_cluster, radar_thesis_13058.
 
-**7. Design: committee** — Five personas; prescribe 3 by lowest dimensions or pick random 3.
-- **Figure:** `committee_assembly_demo.png` — "Different profiles trigger different committees. Low methodological scores → Methodologist joins the committee."
+**7. Committee** — Five personas; prescribe 3 by lowest dimensions. *Show:* committee_assembly_demo.png.
 
-**8. Design: digital doubles** — Thesis, condition, student_profile, weak_dims, methodology from MACSS corpus.
+**8. Digital doubles** — MACSS corpus; embedding clusters (KMeans); student profiles (passive_accepter, methods_weak, descriptive_reporter); ground-truth weak_dims for diagnostic validation.
 
-**9. Design: development plan** — Gap map, exercises, trajectory from profile + deliberation feedback.
-- **Figure:** `development_plan_example.png` — Shows gap map, exercises, and trajectory for one thesis.
+**9. Development plan** — Gap map, exercises, trajectory. *Show:* development_plan_example.png.
 
-**10. Design: metrics** — Mechanical reliance, trust, quality, plan quality, deliberation metrics.
+**10. Metrics** — Mechanical reliance, trust, quality, plan quality, feedback specificity.
 
-**11. Method summary** — Pipeline: load corpus → build doubles → run condition (C1/C2/C3) → compute metrics.
+**11. Method** — Corpus → doubles → C1/C2/C3 → metrics.
 
 ---
 
-## Slides 12–16: Results
+## Slides 12–15: Results
 
-**12. Results: pilot** — Mean mechanical reliance by condition (chart).
-- **Figure:** `plan_quality_by_condition.png`, `feedback_specificity_by_condition.png`
-- *Talking point:* Prescribed committee yields higher plan quality and more specific feedback than random or single agent.
+**12. Pilot** — Prescribed yields higher plan quality and feedback specificity. *Show:* plan_quality_by_condition.png, feedback_specificity_by_condition.png.
 
-**13. Results: pilot** — Mean trust by condition (chart).
-- **Figure:** Same pilot figures; or reference qualitative_samples for trust/engagement evidence.
+**13. Pilot table** — MR, trust, quality by condition. *Data:* pilot_results.json. Table can be built from aggregated means per condition.
 
-**14. Results: table** — MR, trust, quality, plan quality by condition (sample sizes).
-- **Data:** Extract from `data/pilot_results.json` or docs.
+**14. Qualitative** — C3 feedback dimension-targeted; C1 generic. *Show:* feedback_comparison_thesis_13058.png, deliberation_thesis_13058.png. Quotes: deliberation_thesis_13058.txt.
 
-**15. Qualitative** — Feedback–revision pairs and development plans in pilot_results / qualitative_samples.
-- **Figure:** `feedback_comparison_thesis_13058.png` — Side-by-side C1 vs C3 feedback.
-- **Figure:** `deliberation_thesis_13058.png` — Committee deliberation excerpt.
-- **Text:** `deliberation_thesis_13058.txt` — Raw deliberation for quotes.
-- *Talking point:* C3 feedback is dimension-targeted; C1 is generic.
-
-**16. Interpretation** — Prescribed committee vs. random/single: effect on plan quality and engagement.
-- **Figure:** `plan_quality_by_condition.png` — Pilot evidence.
-- **Figure:** `github_improvement_heatmap.png` — "Week 2→9 improvement on plan dimensions; authors with development plans show gains."
-- **Figure:** `github_memo_validation.png` — Overall GitHub retrospective summary.
+**15. GitHub validation** — 345 memos, 41 authors, 8 weeks. Retrospective: diagnose Week 2 → plan → judge Week 9. Mean improvement 3.2–4.2 by dimension. *Show:* github_improvement_heatmap.png, github_memo_validation.png.
 
 ---
 
-## Slides 17–19: Limitations, Future, Data Process
+## Slides 16–18: Data & Interpretation
 
-**17. Limitations & future work** — Simulated students; small N; single LLM. Future: scale N; human subjects; Safe to Be Challenged (visible harmlessness label) as follow-up.
+**16. Data: pilot** — MACSS corpus; 6 embedding clusters; stratified sampling; 3 conditions × n per condition.
 
-**18. Data: pilot & digital doubles** — MACSS thesis corpus → embedding clusters (KMeans) → sampled theses; 3 conditions × n per condition; ground-truth weak_dims for diagnostic accuracy. *For experimenters:* stratified sampling by cluster ensures variation across thesis types (not only computational vs qualitative).
+**17. Data: GitHub retrospective** — 345 memo comments, 49 authors, 8 weeks; 41 with both Week 2 & 9. Retrospective pipeline; ecological validation only (no treatment deployed). *Show:* github_memo_activity.png (memos per week), github_course_improvement_heatmap.png (week × dimension evolution).
 
-**19. Data: GitHub retrospective** — 345 memo comments, 49 authors, 8 weeks (2–9), 17 authors with both Week 2 & 9. Retrospective pipeline: diagnose Week 2 → generate hypothetical plan → judge Week 9 on plan targets. Ecological validation only—students never received plans. *Key stat:* mean improvement 3.2–4.2 by dimension; heatmap shows per-author variation.
+**18. Interpretation** — Pilot: prescribed beats random/single. GitHub: dimensions map to observable growth. Qualitative backs quantitative.
 
 ---
 
-## Slides 20–22: Summary, Q&A, Reproducibility
+## Slides 19–20: Close
 
-**20. Summary** — It's the student, not the thesis; personalized committees + development plans; pilot + GitHub ecological validation; pipeline in place.
+**19. Limitations & future** — Simulated students; small N. Future: scale N; human subjects; Safe to Be Challenged.
 
-**21. Thank you / Q&A** — Contact / repo / report.md.
-
-**22. Reproducibility** — `memo_w9_integration.ipynb` on Colab: clone from GitHub, enable GPU (T4/A100), run cells, download `colab_results.zip` before session ends. Integrates MACSS corpus, Qwen models, OpenAI (GitHub validation), and all seven results.
+**20. Summary + Thank you** — Personalized committees, development plans, pilot + GitHub validation, pipeline ready. Repo, report. Reproducibility: Colab notebook, GPU, download zip.

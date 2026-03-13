@@ -1,0 +1,971 @@
+{
+  "run_at": "2026-03-13T16:50:47.676805Z",
+  "n_theses": 10,
+  "models": [
+    "Qwen/Qwen2.5-0.5B-Instruct",
+    "Qwen/Qwen2.5-1.5B-Instruct",
+    "Qwen/Qwen2.5-7B-Instruct"
+  ],
+  "results": [
+    {
+      "thesis_id": "13058",
+      "title": "Familiarity Breeds Complexity: The Impact of Brand Loyalty on E-Commerce Adverti",
+      "cluster": 0,
+      "model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "..."
+        },
+        "evidence_evaluation": {
+          "score": 4,
+          "justification": "..."
+        },
+        "methodological_reasoning": {
+          "score": 3,
+          "justification": "..."
+        },
+        "theoretical_integration": {
+          "score": 3,
+          "justification": "..."
+        },
+        "self_reflexivity": {
+          "score": 3,
+          "justification": "..."
+        },
+        "receptivity_to_critique": {
+          "score": 3,
+          "justification": "..."
+        }
+      }
+    },
+    {
+      "thesis_id": "5964",
+      "title": "Dynamics in the Interbank Market",
+      "cluster": 0,
+      "model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "..."
+        },
+        "evidence_evaluation": {
+          "score": 2,
+          "justification": "..."
+        },
+        "methodological_reasoning": {
+          "score": 3,
+          "justification": "..."
+        },
+        "theoretical_integration": {
+          "score": 4,
+          "justification": "..."
+        },
+        "self_reflexivity": {
+          "score": 3,
+          "justification": "..."
+        },
+        "receptivity_to_critique": {
+          "score": 4,
+          "justification": "..."
+        }
+      }
+    },
+    {
+      "thesis_id": "16086",
+      "title": "Form, Fragmentation, and Theonomy: Noise as an Expression of Reality",
+      "cluster": 1,
+      "model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The thesis constructs a coherent framework by establishing logical coherence, warranting claims, and ensuring the integrity of evidence. It evaluates sources for causality and establishes correlation between noise and reality, demonstrating a strong emphasis on the connection between factors."
+        },
+        "evidence_evaluation": {
+          "score": 4,
+          "justification": "The thesis evaluates its evidence with high standards, identifying correlation with noise, causal relationships in relation to theories, and providing robust evidence to support various claims within the thesis."
+        },
+        "methodological_reasoning": {
+          "score": 4,
+          "justification": "The thesis demonstrates a thorough understanding of methods by explaining how it was constructed, including the use of appropriate methodologies, data collection techniques, and analysis approaches. This is evidenced by a detailed evaluation of the methodology's effectiveness and relevance."
+        },
+        "theoretical_integration": {
+          "score": 4,
+          "justification": "The thesis integrates concepts from multiple fields, such as environmental sciences, psychology, and social sciences, to provide a comprehensive view of noise as an expression of reality. This integration enhances the clarity and depth of the research findings."
+        },
+        "self_reflexivity": {
+          "score": 4,
+          "justification": "The thesis acknowledges its own limitations and critiques, suggesting that the exploration of noise through the lens of theory could have provided deeper insights into its effects beyond the initial study objectives."
+        },
+        "receptivity_to_critique": {
+          "score": 4,
+          "justification": "The thesis engages critically with critics by acknowledging their concerns while also highlighting the potential benefits of incorporating noise as a representation of reality, emphasizing the need for further investigation and clarification."
+        }
+      }
+    },
+    {
+      "thesis_id": "7196",
+      "title": "The Victory of Turan and the Fall of <i>Ērānšahr</i>: Turks and Iranians in the ",
+      "cluster": 1,
+      "model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "..."
+        },
+        "evidence_evaluation": {
+          "score": 5,
+          "justification": "..."
+        },
+        "methodological_reasoning": {
+          "score": 5,
+          "justification": "..."
+        },
+        "theoretical_integration": {
+          "score": 5,
+          "justification": "..."
+        },
+        "self_reflexivity": {
+          "score": 5,
+          "justification": "..."
+        },
+        "receptivity_to_critique": {
+          "score": 5,
+          "justification": "..."
+        }
+      }
+    },
+    {
+      "thesis_id": "15947",
+      "title": "Diversity and Cohesion: Exploring Employment as Mediator",
+      "cluster": 2,
+      "model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The thesis argues that the motivation for studying employment as a mediator of social cohesion lies in its ability to provide a context-specific view of how demographics and migration affect social processes."
+        },
+        "evidence_evaluation": {
+          "score": 5,
+          "justification": "The thesis uses a variety of methods, including data analysis from multiple sources, to evaluate the claims made by the problem statement, ensuring that the research is grounded and robust."
+        },
+        "methodological_reasoning": {
+          "score": 4,
+          "justification": "The thesis incorporates data collection methods such as surveys and supplementary datasets to provide a comprehensive and rigorous framework for exploring the topic."
+        },
+        "theoretical_integration": {
+          "score": 4,
+          "justification": "The thesis integrates existing theories about immigrant communities and their impact on society while also proposing new hypotheses based on current research."
+        },
+        "self_reflexivity": {
+          "score": 4,
+          "justification": "The thesis acknowledges the complexity of the issue by acknowledging potential biases and the need for further investigation, but does so in a way that enhances the clarity of the results."
+        },
+        "receptivity_to_critique": {
+          "score": 4,
+          "justification": "The thesis is aware of potential critiques of its methodology and empirical base, but takes them as opportunities for growth rather than barriers to truth."
+        }
+      }
+    },
+    {
+      "thesis_id": "3268",
+      "title": "Cooperative Repression: A Case Study of Enforced Disappearances in Laos",
+      "cluster": 2,
+      "model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "..."
+        },
+        "evidence_evaluation": {
+          "score": 4,
+          "justification": "..."
+        },
+        "methodological_reasoning": {
+          "score": 4,
+          "justification": "..."
+        },
+        "theoretical_integration": {
+          "score": 4,
+          "justification": "..."
+        },
+        "self_reflexivity": {
+          "score": 4,
+          "justification": "..."
+        },
+        "receptivity_to_critique": {
+          "score": 4,
+          "justification": "..."
+        }
+      }
+    },
+    {
+      "thesis_id": "15249",
+      "title": "Discrimination in Medical Settings and Health Behaviors: The Moderating Role of ",
+      "cluster": 3,
+      "model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "profile": {
+        "argument_construction": {
+          "score": 5,
+          "justification": "The thesis structure is well-organized, using clear headings for each section of the research."
+        },
+        "evidence_evaluation": {
+          "score": 5,
+          "justification": "The evidence evaluation is thorough, including identifying multiple studies and examples of causal inferences."
+        },
+        "methodological_reasoning": {
+          "score": 5,
+          "justification": "The methodology is presented clearly, with references to relevant literature and methods."
+        },
+        "theoretical_integration": {
+          "score": 5,
+          "justification": "The theory used in the research is supported by other studies and is consistent with the proposed framework."
+        },
+        "self_reflexivity": {
+          "score": 5,
+          "justification": "The authors have acknowledged their biases and stated they would engage more critically with future research."
+        },
+        "receptivity_to_critique": {
+          "score": 5,
+          "justification": "The authors demonstrate engagement with critical analysis and critique, engaging with potential limitations of their findings."
+        }
+      }
+    },
+    {
+      "thesis_id": "6785",
+      "title": "Zoning, Aldermanic Prerogative, and Segregation in the City of Chicago: A Quanti",
+      "cluster": 3,
+      "model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "profile": {
+        "argument_construction": {
+          "score": 3,
+          "justification": "Could not parse diagnostician output."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "Could not parse diagnostician output."
+        },
+        "methodological_reasoning": {
+          "score": 3,
+          "justification": "Could not parse diagnostician output."
+        },
+        "theoretical_integration": {
+          "score": 3,
+          "justification": "Could not parse diagnostician output."
+        },
+        "self_reflexivity": {
+          "score": 3,
+          "justification": "Could not parse diagnostician output."
+        },
+        "receptivity_to_critique": {
+          "score": 3,
+          "justification": "Could not parse diagnostician output."
+        }
+      }
+    },
+    {
+      "thesis_id": "3418",
+      "title": "Brotherhood for Life?: Determining Effective Commitment Mechanisms that Predict ",
+      "cluster": 4,
+      "model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The thesis constructs a comprehensive framework by identifying the roles of various stakeholders within the broader context of fostering alumni engagement."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "The evidence evaluation section evaluates the methodology used by the research team, ensuring its relevance and reliability."
+        },
+        "methodological_reasoning": {
+          "score": 4,
+          "justification": "The thesis successfully establishes the methodologies and techniques employed throughout the study, including surveys and interviews."
+        },
+        "theoretical_integration": {
+          "score": 4,
+          "justification": "The thesis integrates the findings into broader academic frameworks, highlighting how alumni involvement has been studied across disciplines."
+        },
+        "self_reflexivity": {
+          "score": 4,
+          "justification": "The thesis reflects on its own research methods and conclusions through self-reflection, demonstrating awareness of potential biases."
+        },
+        "receptivity_to_critique": {
+          "score": 4,
+          "justification": "The thesis acknowledges the importance of critiquing findings while maintaining a critical stance towards the literature."
+        }
+      }
+    },
+    {
+      "thesis_id": "15394",
+      "title": "Examining Semantic Shifts of Sociological Papers from 1940 to 2020 Using Text Em",
+      "cluster": 5,
+      "model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The thesis successfully constructs a logical framework for the research methodology, presenting it as a coherent body of work."
+        },
+        "evidence_evaluation": {
+          "score": 5,
+          "justification": "The research evaluates the methods used, identifying sources of bias and ensuring consistency between different data points."
+        },
+        "methodological_reasoning": {
+          "score": 4,
+          "justification": "The thesis presents a detailed explanation of how the methods were developed, including their selection criteria and rationale."
+        },
+        "theoretical_integration": {
+          "score": 5,
+          "justification": "The research integrates theoretical perspectives from multiple disciplines, providing a comprehensive overview of the field."
+        },
+        "self_reflexivity": {
+          "score": 4,
+          "justification": "The authors acknowledge the influence of other studies and critically evaluate them within the context of the field."
+        },
+        "receptivity_to_critique": {
+          "score": 5,
+          "justification": "The research is aware of criticisms and acknowledges areas where further research could improve, without deflection or capitulation."
+        }
+      }
+    },
+    {
+      "thesis_id": "13058",
+      "title": "Familiarity Breeds Complexity: The Impact of Brand Loyalty on E-Commerce Adverti",
+      "cluster": 0,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The study demonstrates logical coherence in its arguments, clearly distinguishing between claims and supporting evidence."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "While the study evaluates sources for reliability, it does not fully address potential biases or conflicts within the data set."
+        },
+        "methodological_reasoning": {
+          "score": 4,
+          "justification": "The study justifies its choice of methodology and acknowledges potential validity threats such as sample selection bias."
+        },
+        "theoretical_integration": {
+          "score": 3,
+          "justification": "Although the study connects findings to existing theories, it could benefit from more detailed integration into broader academic discourse."
+        },
+        "self_reflexivity": {
+          "score": 2,
+          "justification": "The study shows awareness of some personal biases but lacks significant reflection on the positionality of the research."
+        },
+        "receptivity_to_critique": {
+          "score": 4,
+          "justification": "The study engages positively with critiques by acknowledging them and incorporating feedback."
+        }
+      }
+    },
+    {
+      "thesis_id": "5964",
+      "title": "Dynamics in the Interbank Market",
+      "cluster": 0,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The thesis demonstrates logical coherence, strong warrant for the main arguments, and clear claim-evidence alignment."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "While the evaluation of sources is present, there is room for improvement as the paper does not differentiate between correlation and causation effectively."
+        },
+        "methodological_reasoning": {
+          "score": 4,
+          "justification": "The paper justifies its design choices by explaining the rationale behind using specific algorithms and approximations, but it could benefit from more clarity regarding the identification of validity threats and scope conditions."
+        },
+        "theoretical_integration": {
+          "score": 3,
+          "justification": "The thesis connects findings to relevant frameworks, though it primarily focuses on describing patterns rather than integrating them into broader theoretical constructs."
+        },
+        "self_reflexivity": {
+          "score": 4,
+          "justification": "The paper acknowledges some assumptions and positions, but it could explore how these may affect the results and conclusions further."
+        },
+        "receptivity_to_critique": {
+          "score": 2,
+          "justification": "The paper does not engage significantly with critiques or challenges, instead opting to defend certain aspects without considering alternative viewpoints."
+        }
+      }
+    },
+    {
+      "thesis_id": "16086",
+      "title": "Form, Fragmentation, and Theonomy: Noise as an Expression of Reality",
+      "cluster": 1,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The thesis demonstrates good logical coherence and clear claims, aligning well with its title 'Form, Fragmentation, and Theonomy'. However, the warrant section could be more comprehensive."
+        },
+        "evidence_evaluation": {
+          "score": 2,
+          "justification": "While the thesis shows awareness of distinguishing between correlation and causation, it does not provide sufficient evaluation of the credibility or relevance of sources cited."
+        },
+        "methodological_reasoning": {
+          "score": 3,
+          "justification": "The thesis provides some justification for design choices but lacks depth in discussing potential validity threats and identifying scope conditions effectively."
+        },
+        "theoretical_integration": {
+          "score": 4,
+          "justification": "The thesis successfully connects practical insights about noise as an expression of reality within broader philosophical discussions, integrating the material into existing frameworks without merely describing patterns."
+        },
+        "self_reflexivity": {
+          "score": 3,
+          "justification": "Awareness of personal biases is present, but the author's positionality and limitations are not fully addressed, leading to a somewhat superficial engagement."
+        },
+        "receptivity_to_critique": {
+          "score": 4,
+          "justification": "The author engages critically with critiques, demonstrating openness to feedback and willingness to revise their approach based on received input."
+        }
+      }
+    },
+    {
+      "thesis_id": "7196",
+      "title": "The Victory of Turan and the Fall of <i>Ērānšahr</i>: Turks and Iranians in the ",
+      "cluster": 1,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The author effectively constructs a strong argument by linking the Khaganate's involvement to the overall narrative and emphasizing the importance of their impact."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "While the author provides significant evidence, there is a need for further evaluation of sources and potential biases in historical claims."
+        },
+        "methodological_reasoning": {
+          "score": 3,
+          "justification": "The author demonstrates awareness of methodology but could benefit from a deeper discussion on the validity of certain claims and the potential threats to the study."
+        },
+        "theoretical_integration": {
+          "score": 3,
+          "justification": "The integration of theory into the paper is solid; however, it does not go beyond presenting patterns without connecting them to broader frameworks or theories."
+        },
+        "self_reflexivity": {
+          "score": 4,
+          "justification": "The author shows awareness of assumptions and positions, but could delve deeper into how these might affect the interpretation of events and the conclusions drawn."
+        },
+        "receptivity_to_critique": {
+          "score": 3,
+          "justification": "The author engages with critiques but could do so more critically, perhaps considering counterarguments to strengthen the argument."
+        }
+      }
+    },
+    {
+      "thesis_id": "15947",
+      "title": "Diversity and Cohesion: Exploring Employment as Mediator",
+      "cluster": 2,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The thesis demonstrates logical coherence, strong claims, and effective use of evidence to support its arguments."
+        },
+        "evidence_evaluation": {
+          "score": 4,
+          "justification": "The thesis critically evaluates sources, distinguishing correlations from causations, and considers the reliability and relevance of different datasets."
+        },
+        "methodological_reasoning": {
+          "score": 4,
+          "justification": "The study justifies its approach by explaining the rationale behind choosing specific methods and variables, showing awareness of potential biases or limitations."
+        },
+        "theoretical_integration": {
+          "score": 4,
+          "justification": "The thesis successfully integrates findings into broader theoretical frameworks, providing insights that extend beyond mere descriptive analysis."
+        },
+        "self_reflexivity": {
+          "score": 3,
+          "justification": "While acknowledging some aspects of personal bias and limitations, the thesis does not fully engage critically with challenges within the research."
+        },
+        "receptivity_to_critique": {
+          "score": 5,
+          "justification": "The thesis shows a high level of engagement with critiques, actively considering them and proposing solutions to address potential issues."
+        }
+      }
+    },
+    {
+      "thesis_id": "3268",
+      "title": "Cooperative Repression: A Case Study of Enforced Disappearances in Laos",
+      "cluster": 2,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The thesis demonstrates strong logical coherence in its arguments about the case study and the concept of enforced disappearances. The claims are well-supported by evidence, though there could be more detailed explanation."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "While the evidence is generally clear and relevant, the thesis could benefit from more nuanced distinction between correlation and causation in certain instances."
+        },
+        "methodological_reasoning": {
+          "score": 4,
+          "justification": "The thesis effectively justifies its methodology, explaining why it chose specific methods for data collection and analysis. It also addresses potential sources of bias or errors in the data."
+        },
+        "theoretical_integration": {
+          "score": 4,
+          "justification": "The thesis successfully connects the findings to broader theories regarding human rights and state behavior, particularly focusing on the role of Thailand as a state actor in perpetrating such crimes."
+        },
+        "self_reflexivity": {
+          "score": 4,
+          "justification": "The thesis shows awareness of key ethical concerns and situational considerations throughout, including the importance of avoiding deflection or capitulation when faced with critiques."
+        },
+        "receptivity_to_critique": {
+          "score": 4,
+          "justification": "The thesis engages constructively with any critiques raised, demonstrating an openness to feedback while maintaining its stance on the topic."
+        }
+      }
+    },
+    {
+      "thesis_id": "15249",
+      "title": "Discrimination in Medical Settings and Health Behaviors: The Moderating Role of ",
+      "cluster": 3,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The paper demonstrates strong logical coherence by clearly defining the objectives and methods used in the study."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "While the study uses a well-defined methodology, it lacks critical evaluation of sources and potential biases, which is necessary for a robust discussion."
+        },
+        "methodological_reasoning": {
+          "score": 4,
+          "justification": "The authors provide reasonable explanations for their choice of variables and control variables, but could benefit from further clarity on how they addressed validity issues."
+        },
+        "theoretical_integration": {
+          "score": 3,
+          "justification": "The paper integrates theoretical concepts relevant to the topic, but does not delve deeply into how specific models or theories are applied within the context of the study."
+        },
+        "self_reflexivity": {
+          "score": 3,
+          "justification": "There is an awareness of some assumptions and positions, but the paper does not critically engage with critiques or alternatives."
+        },
+        "receptivity_to_critique": {
+          "score": 4,
+          "justification": "The authors acknowledge potential limitations and discuss the need for future studies, showing engagement with critique."
+        }
+      }
+    },
+    {
+      "thesis_id": "6785",
+      "title": "Zoning, Aldermanic Prerogative, and Segregation in the City of Chicago: A Quanti",
+      "cluster": 3,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The author effectively constructs their argument by linking theories about segregation to empirical data. However, some sections could benefit from clearer definitions or explanations."
+        },
+        "evidence_evaluation": {
+          "score": 4,
+          "justification": "The author distinguishes between correlation and causation but occasionally relies on questionable sources and may overlook potential confounding variables."
+        },
+        "methodological_reasoning": {
+          "score": 3,
+          "justification": "While the study acknowledges methodological issues such as data availability and potential biases, it does not thoroughly discuss the impact on the study's reliability."
+        },
+        "theoretical_integration": {
+          "score": 3,
+          "justification": "The author connects theory well but lacks integration into broader sociopolitical contexts, making the conclusions somewhat isolated."
+        },
+        "self_reflexivity": {
+          "score": 3,
+          "justification": "Awareness of assumptions and positionality is present but could be more explicit, especially regarding the role of zoning policy and machine politics in influencing outcomes."
+        },
+        "receptivity_to_critique": {
+          "score": 3,
+          "justification": "Engaging critically with critiques would enhance the thesis; the author deflates challenging points rather than addressing them directly."
+        }
+      }
+    },
+    {
+      "thesis_id": "3418",
+      "title": "Brotherhood for Life?: Determining Effective Commitment Mechanisms that Predict ",
+      "cluster": 4,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The author demonstrates logical coherence in presenting the topic and its relevance to existing literature."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "While the author evaluates the quality of sources and potential issues like bias or limited sample sizes, there is room for improvement in distinguishing between correlations and causations."
+        },
+        "methodological_reasoning": {
+          "score": 4,
+          "justification": "The study's methodology is described clearly, including the survey design and sampling process, which helps justify the chosen methods and identify potential biases."
+        },
+        "theoretical_integration": {
+          "score": 3,
+          "justification": "The author connects the findings to broader theories but could further integrate more examples or case studies to strengthen the theoretical integration section."
+        },
+        "self_reflexivity": {
+          "score": 4,
+          "justification": "The author acknowledges potential biases, such as sampling size and inclusivity, indicating awareness of their own positionality."
+        },
+        "receptivity_to_critique": {
+          "score": 3,
+          "justification": "While the author engages with critiques by acknowledging limitations and potential improvements, they do not fully engage with them; hence, it seems defensiveness rather than critical thinking."
+        }
+      }
+    },
+    {
+      "thesis_id": "15394",
+      "title": "Examining Semantic Shifts of Sociological Papers from 1940 to 2020 Using Text Em",
+      "cluster": 5,
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The thesis demonstrates strong logical coherence and warrant construction. The claims made about shifts in semantic meaning are supported by the analysis of text embeddings."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "While the use of text embeddings is innovative, the evaluation of evidence could benefit from more nuanced differentiation between correlation and causation, especially in light of the study's focus on semantic shifts."
+        },
+        "methodological_reasoning": {
+          "score": 4,
+          "justification": "The study clearly justifies its design choices, including the choice of time period and methodology. However, further discussion on the implications of the chosen scope for broader applicability would improve depth."
+        },
+        "theoretical_integration": {
+          "score": 3,
+          "justification": "The thesis successfully integrates findings into existing sociological frameworks but does not delve deeply enough into how these insights relate beyond the immediate context of shifting semantic meanings."
+        },
+        "self_reflexivity": {
+          "score": 4,
+          "justification": "The author shows awareness of their positionality and acknowledges the importance of considering biases and limitations in the study, which is commendable."
+        },
+        "receptivity_to_critique": {
+          "score": 3,
+          "justification": "The thesis engages with critiques related to the study's methods and findings but does not fully address or critically engage with alternative perspectives or methodologies."
+        }
+      }
+    },
+    {
+      "thesis_id": "13058",
+      "title": "Familiarity Breeds Complexity: The Impact of Brand Loyalty on E-Commerce Adverti",
+      "cluster": 0,
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The argument is well-structured with a clear hypothesis and extension of existing theory. However, the logical flow could be improved with more explicit connections between different parts of the argument."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "The use of a unique dataset is a strength, but the thesis does not provide enough detail on how it distinguishes correlation from causation or evaluates the quality of sources. There is also no mention of conflicting evidence."
+        },
+        "methodological_reasoning": {
+          "score": 4,
+          "justification": "The choice of an instrumental variable to address reverse causality is innovative and justified. However, the thesis does not explicitly discuss other potential validity threats or scope conditions."
+        },
+        "theoretical_integration": {
+          "score": 4,
+          "justification": "The study effectively integrates Agrawal's (1996) framework and extends it to a new context. However, there is room for deeper integration by discussing how the findings relate to other relevant theories."
+        },
+        "self_reflexivity": {
+          "score": 3,
+          "justification": "The thesis shows awareness of the limitations of using a single dataset and addressing reverse causality. However, there is no explicit discussion of the researcher's positionality or assumptions."
+        },
+        "receptivity_to_critique": {
+          "score": 2,
+          "justification": "The thesis does not demonstrate engagement with potential critiques or alternative explanations. It lacks a critical discussion of possible weaknesses in the methodology or findings."
+        }
+      }
+    },
+    {
+      "thesis_id": "5964",
+      "title": "Dynamics in the Interbank Market",
+      "cluster": 0,
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The argument is logically coherent and well-structured, with a clear claim about the dynamics in the interbank market and how it differs from a representative agent model. The evidence is aligned with the claims."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "The thesis mentions the use of the Krusell-Smith algorithm and linear approximation, which suggests some evaluation of evidence, but it does not provide details on distinguishing correlation from causation or assessing the quality of sources."
+        },
+        "methodological_reasoning": {
+          "score": 4,
+          "justification": "The methodology is justified by proving the uniqueness of the stationary equilibrium and analyzing the convergence path. However, potential validity threats related to the assumption of heterogeneous agents and the impact of external shocks are not discussed."
+        },
+        "theoretical_integration": {
+          "score": 3,
+          "justification": "The findings are connected to existing models but do not deeply integrate them into a broader theoretical framework or discuss how they relate to other theories in economics."
+        },
+        "self_reflexivity": {
+          "score": 2,
+          "justification": "There is little indication of awareness of assumptions, positionality, or limitations. The thesis does not address potential biases or alternative explanations for the results."
+        },
+        "receptivity_to_critique": {
+          "score": 1,
+          "justification": "The excerpt does not show engagement with critiques or alternative viewpoints. There is no indication of how the author would respond to challenges to their findings."
+        }
+      }
+    },
+    {
+      "thesis_id": "16086",
+      "title": "Form, Fragmentation, and Theonomy: Noise as an Expression of Reality",
+      "cluster": 1,
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The thesis presents a clear argument about the relationship between form, fragmentation, and theonomy, with logical coherence and well-aligned claims and evidence."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "The thesis adequately distinguishes between correlation and causation but could improve in evaluating the quality of sources and addressing conflicting evidence."
+        },
+        "methodological_reasoning": {
+          "score": 2,
+          "justification": "The methodology is somewhat justified, but the thesis does not thoroughly discuss potential validity threats or provide clear scope conditions for the study."
+        },
+        "theoretical_integration": {
+          "score": 4,
+          "justification": "The thesis effectively connects its findings to existing theoretical frameworks, providing a rich context for the research."
+        },
+        "self_reflexivity": {
+          "score": 3,
+          "justification": "The thesis acknowledges some assumptions but does not deeply explore the author's positionality or limitations of the study."
+        },
+        "receptivity_to_critique": {
+          "score": 2,
+          "justification": "The thesis does not engage substantively with critiques or alternative perspectives, which limits its openness to feedback and improvement."
+        }
+      }
+    },
+    {
+      "thesis_id": "7196",
+      "title": "The Victory of Turan and the Fall of <i>Ērānšahr</i>: Turks and Iranians in the ",
+      "cluster": 1,
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The argument is logically coherent, with a clear claim about the Turkic Khaganate's impact on the fall of the Iranian Empire. The evidence provided supports the claim well, and there is a strong alignment between the claims made and the evidence presented."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "The evidence provided shows awareness of the distinction between correlation and causation, but there is limited discussion on the quality of sources or how conflicting evidence might challenge the arguments. More detailed evaluation of the evidence would strengthen this dimension."
+        },
+        "methodological_reasoning": {
+          "score": 2,
+          "justification": "The methodology is not thoroughly justified, nor are potential validity threats identified. The scope of the study is not clearly defined, and there is no discussion on how the methods used address the research questions."
+        },
+        "theoretical_integration": {
+          "score": 4,
+          "justification": "The findings are well-integrated into existing frameworks, particularly those related to the Last Great War of Antiquity and the interactions between different empires. However, the integration could be deeper by connecting to broader theories of state collapse and empire."
+        },
+        "self_reflexivity": {
+          "score": 3,
+          "justification": "There is some awareness of assumptions and positionality, especially regarding the interpretation of Iranian imperial ideology. However, the limitations of the study are not fully acknowledged, and the author could have done more to reflect on potential biases."
+        },
+        "receptivity_to_critique": {
+          "score": 2,
+          "justification": "The thesis does not engage substantively with critiques or alternative interpretations. The author does not consider how other scholars might view the argument or what counterarguments exist, which limits the openness to feedback and improvement."
+        }
+      }
+    },
+    {
+      "thesis_id": "15947",
+      "title": "Diversity and Cohesion: Exploring Employment as Mediator",
+      "cluster": 2,
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The argument is logically coherent, with a clear claim that employment mediates the relationship between immigration-driven diversity and social cohesion. The evidence presented aligns well with the claims made, though more detailed explanation of the causal mechanisms would strengthen it."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "The thesis acknowledges the use of data from multiple sources but does not explicitly address the potential for correlation versus causation or the quality of the data sources. More discussion on these aspects would improve the evaluation of evidence."
+        },
+        "methodological_reasoning": {
+          "score": 3,
+          "justification": "The choice of combining data from different surveys seems appropriate, but the thesis could benefit from a more detailed explanation of how these datasets are combined and any potential validity threats, such as temporal lag issues."
+        },
+        "theoretical_integration": {
+          "score": 2,
+          "justification": "The thesis connects findings to some relevant frameworks, such as the effects of diversity on social cohesion, but does not deeply integrate existing theories or show how the findings contribute to broader sociological understandings."
+        },
+        "self_reflexivity": {
+          "score": 2,
+          "justification": "There is limited awareness of potential biases or assumptions, such as the assumption that foreign-born populations necessarily compete with native-born workers for jobs. More reflection on these issues would enhance the thesis's credibility."
+        },
+        "receptivity_to_critique": {
+          "score": 1,
+          "justification": "The excerpt does not demonstrate engagement with potential critiques or alternative explanations. This lack of engagement makes it difficult to assess the thesis's openness to feedback and improvement."
+        }
+      }
+    },
+    {
+      "thesis_id": "3268",
+      "title": "Cooperative Repression: A Case Study of Enforced Disappearances in Laos",
+      "cluster": 2,
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "profile": {
+        "argument_construction": {
+          "score": 3,
+          "justification": "The thesis introduces the topic clearly but lacks a strong, coherent argument or claim. The narrative jumps between facts and general statements without a clear thesis statement or central argument."
+        },
+        "evidence_evaluation": {
+          "score": 2,
+          "justification": "The evidence provided (missing activists' details) is used to make a case but does not show a deep evaluation of the evidence's quality or relevance. There is no discussion on potential biases or alternative explanations."
+        },
+        "methodological_reasoning": {
+          "score": 1,
+          "justification": "No methodology is described, and there is no indication of how the case study was conducted or analyzed. The discussion does not address potential threats to validity or the scope of the findings."
+        },
+        "theoretical_integration": {
+          "score": 2,
+          "justification": "The thesis refers to enforced disappearances without integrating them into broader theoretical frameworks or existing literature. It focuses more on describing the phenomenon than connecting it to established theories."
+        },
+        "self_reflexivity": {
+          "score": 2,
+          "justification": "The author does not explicitly discuss their own positionality or any assumptions made in the research. There is no reflection on potential biases or limitations in the study."
+        },
+        "receptivity_to_critique": {
+          "score": 1,
+          "justification": "There is no indication of engagement with potential critiques or alternative viewpoints. The thesis presents the information as factual without considering counterarguments or alternative explanations."
+        }
+      }
+    },
+    {
+      "thesis_id": "15249",
+      "title": "Discrimination in Medical Settings and Health Behaviors: The Moderating Role of ",
+      "cluster": 3,
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The argument is logically coherent, with clear claims and evidence presented. However, more explicit warranting for the relationships could enhance the argument."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "The thesis acknowledges the use of logistic regression but does not delve into whether the study distinguishes between correlation and causation or evaluates the quality of the sources used."
+        },
+        "methodological_reasoning": {
+          "score": 3,
+          "justification": "The study's design and sample size are justified, but there is no discussion on potential validity threats or the generalizability of the results, which limits methodological reasoning."
+        },
+        "theoretical_integration": {
+          "score": 4,
+          "justification": "The thesis connects the findings to existing literature on discrimination and health behaviors, but could further integrate theoretical frameworks to provide a richer context."
+        },
+        "self_reflexivity": {
+          "score": 3,
+          "justification": "The author acknowledges the importance of neighborhood social cohesion as a moderator but does not explicitly discuss their own positionality or any potential biases."
+        },
+        "receptivity_to_critique": {
+          "score": 2,
+          "justification": "The thesis does not engage substantively with potential critiques or alternative explanations for the findings. It lacks a discussion on how other scholars might challenge the conclusions."
+        }
+      }
+    },
+    {
+      "thesis_id": "6785",
+      "title": "Zoning, Aldermanic Prerogative, and Segregation in the City of Chicago: A Quanti",
+      "cluster": 3,
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The thesis presents a clear argument linking zoning practices to racial segregation and disparities in life expectancy and economic opportunities. However, the claim-evidence alignment could be more explicit."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "The thesis mentions using city zoning and Census data, but does not explicitly evaluate the quality or potential biases in these sources, nor does it discuss correlational vs. causal relationships."
+        },
+        "methodological_reasoning": {
+          "score": 3,
+          "justification": "The thesis outlines the use of city zoning and Census data, suggesting a mixed-methods approach, but lacks detailed explanation of how the design choices enhance the study's validity."
+        },
+        "theoretical_integration": {
+          "score": 4,
+          "justification": "The thesis connects its findings to broader theories about segregation and public policy, though it could delve deeper into integrating these theories to explain the specific mechanisms at play."
+        },
+        "self_reflexivity": {
+          "score": 3,
+          "justification": "The thesis acknowledges the influence of machine politics but does not fully explore how the researcher's position or assumptions might affect the study's findings."
+        },
+        "receptivity_to_critique": {
+          "score": 2,
+          "justification": "The thesis does not demonstrate engagement with potential critiques or alternative explanations for the observed correlations between zoning and racial composition."
+        }
+      }
+    },
+    {
+      "thesis_id": "3418",
+      "title": "Brotherhood for Life?: Determining Effective Commitment Mechanisms that Predict ",
+      "cluster": 4,
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The thesis clearly outlines a research question and provides a logical framework for examining aspects of undergraduate fraternity experiences. The argument is coherent and the claims are aligned with the evidence presented."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "The thesis mentions using both quantitative and qualitative data but does not provide detailed evaluation of the quality or potential biases in these sources. There is no explicit discussion on distinguishing correlation from causation."
+        },
+        "methodological_reasoning": {
+          "score": 3,
+          "justification": "The methodology is described but lacks detail on how validity threats were addressed or mitigated. The scope of the study is narrow, focusing on a specific sample, which limits generalizability."
+        },
+        "theoretical_integration": {
+          "score": 4,
+          "justification": "The thesis connects its findings to existing literature on alumni engagement, though it focuses more on pattern description than integrating broader theoretical frameworks. It shows awareness of related research."
+        },
+        "self_reflexivity": {
+          "score": 3,
+          "justification": "The author acknowledges the limitations of the study, such as the small sample size and the specific nature of the sample, but does not delve deeply into personal biases or assumptions."
+        },
+        "receptivity_to_critique": {
+          "score": 2,
+          "justification": "The thesis does not engage with potential critiques or alternative explanations for the findings. It does not present a robust defense against possible counterarguments."
+        }
+      }
+    },
+    {
+      "thesis_id": "15394",
+      "title": "Examining Semantic Shifts of Sociological Papers from 1940 to 2020 Using Text Em",
+      "cluster": 5,
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "profile": {
+        "argument_construction": {
+          "score": 4,
+          "justification": "The argument is coherent and clearly outlines the research focus on semantic shifts over time. The claim-evidence alignment is strong as the evidence provided through text embeddings supports the claims made."
+        },
+        "evidence_evaluation": {
+          "score": 3,
+          "justification": "The evidence is evaluated for temporal trends but does not address the distinction between correlation and causation or evaluate the quality of sources. There is room for improvement in how the evidence is critically analyzed."
+        },
+        "methodological_reasoning": {
+          "score": 3,
+          "justification": "The methodological choices are well described, but there could be more discussion on potential validity threats such as the representativeness of the journals selected and the impact of publication biases."
+        },
+        "theoretical_integration": {
+          "score": 2,
+          "justification": "The thesis connects findings to sociological discourse but primarily describes patterns rather than integrating them into broader theoretical frameworks or existing literature."
+        },
+        "self_reflexivity": {
+          "score": 2,
+          "justification": "There is limited awareness of potential biases or assumptions in the use of text embeddings, and the thesis does not explicitly discuss the limitations of this approach."
+        },
+        "receptivity_to_critique": {
+          "score": 1,
+          "justification": "The thesis does not engage with alternative interpretations or critiques of the methodology or findings, indicating a lack of receptivity to alternative viewpoints."
+        }
+      }
+    }
+  ]
+}
