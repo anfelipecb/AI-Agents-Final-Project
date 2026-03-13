@@ -1,19 +1,20 @@
-# Safe to Be Challenged
+# It's the Student, Not the Thesis
 
-**Trust and Harmlessness in Adversarial AI Advising**
+**Personalized Adversarial Committees for Competency Development Against Mechanical AI Use**
 
-A final project on how AI advising can remain trustworthy and harmless when students are explicitly challenged—using a skill-diagnostic committee, a harmlessness monitor, and three experimental conditions (committee-only, silent monitor, visible label).
+A final project on personalized committee feedback for thesis development: a six-dimension competency diagnostician, prescribed or random committees, and development plans—with harmlessness monitoring retained as a design feature.
 
 ## Motivation
 
-When students receive adversarial or critical feedback from an AI, trust and visible feedback matter: users need to know when the system is monitoring for harm and how it is steering advice. This project studies whether making harmlessness monitoring visible (vs. silent or absent) changes reliance and engagement.
+Competency development matters more than the thesis artifact. We study whether **personalized adversarial committees** (matched to a student’s weakest dimensions) improve development plans and engagement compared to a single generic agent or a random committee. The project targets mechanical AI use by emphasizing substantive engagement with feedback.
 
 ## Method
 
-- **Three conditions:** committee-only (no monitor), silent_monitor (monitor present but not shown), visible_label (monitor and label shown to the user).
-- **Digital doubles:** synthetic “students” with thesis abstracts, trust sensitivity, and methodology, driven by the MACSS thesis corpus.
-- **Data:** MACSS theses (OAI-PMH / HTML), abstracts for steering, and GitHub course-issue memos for longitudinal validation.
-- **Models:** committee (skill diagnostician + adversarial critic), embedding model (sentence-transformers), safety monitor (condition-dependent labeling).
+- **Three conditions:** single_agent (one helpful reviewer), random_committee (3 agents chosen at random), prescribed_committee (diagnose → assemble committee by lowest dimensions → deliberation → development plan).
+- **Six-dimension diagnostician:** argument_construction, evidence_evaluation, methodological_reasoning, theoretical_integration, self_reflexivity, receptivity_to_critique.
+- **Student profiles (MVP):** passive_accepter, methods_weak, descriptive_reporter—each with weak_dims for ground-truth diagnostic accuracy.
+- **Data:** MACSS theses (OAI-PMH / HTML), abstracts for steering, GitHub course-issue memos for longitudinal validation.
+- **Models:** committee (diagnostician, assemble_committee, committee_deliberation), development plan generator, embeddings, safety monitor (design feature only).
 
 ## How to Run
 
@@ -25,6 +26,7 @@ uv sync
 uv sync --extra dev   # for pytest
 uv run python run.py --pilot
 uv run python run.py --pilot --github --fetch-corpus
+uv run python run.py --full   # full experiment (3 conditions × 3 students × 5 theses)
 uv run python run.py --fetch-github   # fetch GitHub issues only
 uv run pytest tests/
 ```
@@ -33,8 +35,8 @@ uv run pytest tests/
 
 ## Structure
 
-- `run.py` — main entry: `--pilot`, `--github`, `--fetch-corpus`, `--fetch-github`
-- `src/safe_to_be_challenged/` — package: `config`, `data` (corpus, loaders, github_loader), `models` (embeddings, committee, safety), `metrics`, `pipeline` (runner, github_validation)
+- `run.py` — main entry: `--pilot`, `--github`, `--fetch-corpus`, `--fetch-github`, `--full`
+- `src/developing_the_researcher/` — package: `config`, `data` (corpus, loaders, github_loader), `models` (embeddings, committee, safety, diagnostician, development_plan), `metrics` (core, quality, deliberation), `pipeline` (runner, github_validation)
 - `data/` — MACSS corpus, GitHub issues, pilot results, qualitative samples (generated at runtime)
 - `figures/` — pilot plots
 - `tests/` — unit tests (corpus, loaders, embeddings, metrics, GitHub loader)
@@ -42,8 +44,8 @@ uv run pytest tests/
 
 ## Requirements
 
-- **Data:** Three forms—MACSS theses, abstracts for steering, GitHub memo comments (optional).
-- **Models:** Committee LLM, embedding model, safety/condition logic.
-- **Validation:** Pilot metrics (mechanical reliance, trust, quality); GitHub longitudinal trajectories; qualitative interpretation of feedback–revision pairs.
+- **Data:** MACSS theses, abstracts for steering, GitHub memo comments (optional).
+- **Models:** Committee LLM, embedding model, diagnostician, development plan generator; safety monitor (design feature).
+- **Validation:** Pilot metrics (mechanical reliance, trust, quality, plan quality, deliberation metrics); GitHub longitudinal trajectories; qualitative interpretation of feedback–revision pairs.
 
-See [report.md](report.md) for implementation details and qualitative interpretation.
+See [report.md](report.md) for implementation details.

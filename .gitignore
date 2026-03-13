@@ -1,0 +1,40 @@
+# Data and generated outputs
+data/
+logs/
+figures/
+*.json
+
+# Large model files
+*.pt
+*.bin
+*.safetensors
+*.ckpt
+.cache/
+
+# Claude plan and context (local only)
+claude/
+claude-context.md
+final_project_cursor.md
+
+# Cursor skills (project-specific, not for remote)
+.cursor/
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

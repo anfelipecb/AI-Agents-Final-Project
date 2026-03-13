@@ -1,7 +1,7 @@
 """Tests for corpus utilities: extract_year, infer_methodology."""
 import pytest
 
-from safe_to_be_challenged.data.corpus import extract_year, infer_methodology
+from developing_the_researcher.data.corpus import extract_year, infer_methodology
 
 
 def test_extract_year():

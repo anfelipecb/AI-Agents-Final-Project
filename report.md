@@ -1,8 +1,8 @@
-# Implementation Report: Safe to Be Challenged
+# Implementation Report: It's the Student, Not the Thesis
 
 ## What Was Implemented and Why
 
-This document summarizes the implementation of the final project according to the plan in `final_project_memo_w9_integration_ef95b19c.plan.md`.
+This document summarizes the implementation of the final project: **It's the Student, Not the Thesis** — Personalized Adversarial Committees for Competency Development Against Mechanical AI Use.
 
 ---
 
@@ -29,7 +29,7 @@ This document summarizes the implementation of the final project according to th
 - **`data/harvest.py`** — OAI-PMH harvester for Knowledge UChicago. Refactored from week6 `oai_harvest.py`.
 - **`data/scraper.py`** — HTML scraper fallback (httpx + BeautifulSoup). Refactored from week6 `scraper.py`.
 
-**Why:** The project is self-contained. No runtime imports from `week6` or `week9`. All MACSS logic lives in `src/safe_to_be_challenged/data/`.
+**Why:** The project is self-contained. No runtime imports from `week6` or `week9`. All MACSS logic lives in `src/developing_the_researcher/data/`.
 
 ---
 
@@ -40,7 +40,7 @@ This document summarizes the implementation of the final project according to th
 | Loader | File | Purpose |
 |--------|------|---------|
 | `CorpusLoader` | `data/loaders.py` | Loads MACSS corpus from JSON; `fetch_via_harvest()`, `fetch_via_scrape()`, `save_abstracts_for_steering()`. Falls back to `SAMPLE_ABSTRACTS` if empty. |
-| `DoublesLoader` | `data/loaders.py` | `load_doubles_from_corpus()` — builds `(thesis, condition, trust_sensitivity, methodology)` for three conditions. Stratifies by methodology when available. |
+| `DoublesLoader` | `data/loaders.py` | `load_doubles_from_corpus()` — builds `(thesis, condition, student_profile, weak_dims, methodology)` for three conditions (single_agent, random_committee, prescribed_committee). Uses `STUDENT_PROFILES` from config. |
 | `GitHubIssuesLoader` | `data/github_loader.py` | Fetches issues + comments via httpx + GitHub REST API. Filters "Week N Memo" issues; extracts `(issue_id, week, author, memo_text, created_at, thumbs_up, reactions)`. Caches to `github_issues.json`. |
 | `EmbeddingLoader` | `models/embeddings.py` | Lazy-loads sentence-transformers; `get_embeddings()`, `cosine_sim()`. |
 | `CommitteeLoader` | `models/committee.py` | Lazy-loads Qwen2.5-7B (4-bit); `generate()`, `skill_diagnostician()`, `adversarial_critic()`. |
@@ -96,14 +96,15 @@ final-project/
     ml-llm-expert/SKILL.md
     pipeline-orchestration/SKILL.md
     web-scraping/SKILL.md
-  src/safe_to_be_challenged/
+  src/developing_the_researcher/
     config.py
-    metrics.py
+    metrics/
+      core.py, quality.py, deliberation.py
     data/
       corpus.py, harvest.py, scraper.py
       loaders.py, github_loader.py
     models/
-      embeddings.py, committee.py, safety.py
+      embeddings.py, committee.py, safety.py, diagnostician.py, development_plan.py
     pipeline/
       runner.py
       github_validation.py
@@ -154,6 +155,10 @@ These interpretations support the quantitative metrics (mechanical reliance, tru
 ## What Remains (Phase 4)
 
 - **Phase 4:** Draft blog post (3600 words + 13 figures), presentation (5 min / 20 slides).
+
+### Future Work: Safe to Be Challenged
+
+The **visible harmlessness label** as a trust intervention (committee_only vs. silent_monitor vs. visible_label) is retained as a design feature in the safety monitor but is no longer an experimental condition in the main study. It can be revisited as future work: e.g., A/B tests on whether labeling feedback as “checked for harmlessness” changes engagement or over-reliance.
 
 ---
 

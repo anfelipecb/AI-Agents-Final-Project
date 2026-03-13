@@ -3,9 +3,9 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "safe-to-be-challenged"
+name = "developing-the-researcher"
 version = "0.1.0"
-description = "Memo W9 integration: skill-diagnostic committee + harmlessness monitor + MACSS corpus + GitHub validation"
+description = "Personalized adversarial committees for competency development against mechanical AI use"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [

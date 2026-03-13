@@ -2,7 +2,7 @@
 import numpy as np
 import pytest
 
-from safe_to_be_challenged.models.embeddings import EmbeddingLoader
+from developing_the_researcher.models.embeddings import EmbeddingLoader
 
 
 def test_cosine_sim_identical():

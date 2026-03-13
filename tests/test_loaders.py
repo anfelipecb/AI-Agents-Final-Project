@@ -5,7 +5,7 @@ from pathlib import Path
 
 import pytest
 
-from safe_to_be_challenged.data.loaders import CorpusLoader, DoublesLoader, SAMPLE_ABSTRACTS
+from developing_the_researcher.data.loaders import CorpusLoader, DoublesLoader, SAMPLE_ABSTRACTS
 
 
 def test_corpus_loader_fallback(tmp_path):
@@ -28,14 +28,16 @@ def test_corpus_loader_load_real(tmp_path):
 
 
 def test_doubles_loader_structure():
-    """Doubles have thesis, condition, trust_sensitivity, methodology."""
+    """Doubles have thesis, condition, student_profile, weak_dims, methodology."""
     corpus = CorpusLoader()
     doubles_loader = DoublesLoader(corpus)
     doubles = doubles_loader.load_doubles_from_corpus(n_per_condition=2)
-    conditions = {"committee_only", "silent_monitor", "visible_label"}
+    conditions = {"single_agent", "random_committee", "prescribed_committee"}
+    profiles = {"passive_accepter", "methods_weak", "descriptive_reporter"}
     for d in doubles:
         assert "thesis" in d
         assert d["condition"] in conditions
-        assert d["trust_sensitivity"] in ("low", "high")
+        assert d["student_profile"] in profiles
+        assert "weak_dims" in d
         assert "methodology" in d
     assert len(doubles) >= 3

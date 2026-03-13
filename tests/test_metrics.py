@@ -1,7 +1,7 @@
 """Tests for extract_rating."""
 import pytest
 
-from safe_to_be_challenged.metrics import extract_rating
+from developing_the_researcher.metrics import extract_rating
 
 
 def test_extract_rating():

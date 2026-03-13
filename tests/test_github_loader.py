@@ -5,7 +5,7 @@ from unittest.mock import MagicMock, patch
 
 import pytest
 
-from safe_to_be_challenged.data.github_loader import GitHubIssuesLoader
+from developing_the_researcher.data.github_loader import GitHubIssuesLoader
 
 
 def test_parse_github_api_response():
@@ -20,7 +20,7 @@ def test_parse_github_api_response():
     assert issues[0]["title"] == "Week 3 Memo"
 
 
-@patch("safe_to_be_challenged.data.github_loader.httpx.Client")
+@patch("developing_the_researcher.data.github_loader.httpx.Client")
 def test_load_github_corpus_uses_cache(mock_client, tmp_path):
     """When cache exists and force_refresh=False, no HTTP calls."""
     cache = tmp_path / "github_issues.json"
