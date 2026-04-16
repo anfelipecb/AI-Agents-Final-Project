@@ -4,6 +4,8 @@
 
 We study whether **personalized committee feedback** (matched to a student's weakest competency dimensions) improves development plans and engagement compared to generic or random feedback. The project targets mechanical AI use by emphasizing substantive engagement.
 
+This post explains the project and results: [Substack](https://open.substack.com/pub/afcamachob/p/its-the-student-not-the-thesis?r=n9f3p&utm_campaign=post&utm_medium=web)
+
 ---
 
 ## Research Design
